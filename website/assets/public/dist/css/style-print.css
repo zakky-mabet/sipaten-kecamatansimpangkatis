@@ -1,0 +1,205 @@
+body { 
+   font-family:Arial, Helvetica, sans-serif; 
+   margin-left:3%; 
+   margin-right: 3%;   
+   margin-top: 3%;
+}
+h5.upper { margin: 2px; }
+.upper { text-transform: uppercase;  }
+.underline { text-decoration: underline; }
+.bold { font-weight:bold; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+
+.header { 
+   width:100%; 
+   height:10%; 
+   font-weight:500; 
+   margin-bottom: 3%;  
+}
+
+table.kop {
+   position: center;
+   width: 100%;
+   padding-bottom: 5px;
+   border-bottom:0.2em solid black;
+}
+
+td > span.kop-heading {
+   font-weight: 500;
+   text-align: center;
+   font-size: 18px;
+   line-height: 1.4;
+   text-transform: uppercase;
+   letter-spacing:2px;
+}
+
+td > span.kop-heading-company {
+   font-weight: bold;
+   font-size: 19px;
+   line-height: 1.4;
+   text-transform: uppercase;
+   letter-spacing:3px;
+}
+
+td > span.kop-heading-address {
+   font-weight: 400;
+   font-size: 12px;
+   text-align: center;
+   line-height: 1.2;
+   letter-spacing:1px;
+}
+
+img.logo {
+   width: 50px;
+   height: auto;
+}
+
+h5 { 
+   color: black;
+   height:0px;
+}
+
+div.hr-small {
+   margin-top:3px;
+   width: 100%;
+   border-bottom: 0.8px solid black;
+}
+
+table.table-bordered { 
+   border-width: 0; 
+   border-color: #757572; 
+   border-collapse: collapse; 
+   margin-top: 30px;
+}
+table.table-bordered th {  
+   border-width: 0.1px; 
+   padding: 3px; 
+   border-style: solid; 
+   border-color: #757572; 
+   text-transform: none; 
+}
+table.table-bordered td { 
+   border-width: 0.1px; 
+   border-top: 0px; 
+   padding: 3px 3px 10px 3px; 
+   border-style: solid; 
+   border-color: #757572; 
+}
+
+.content { 
+   font-family:'Arial', sans-serif; 
+   margin-top:30px;
+}
+
+small.print-at {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    
+}
+
+/* SURAT */
+
+.mail-heading {
+    width: 100%;
+    height: auto;
+    text-align: center;
+   display: inline-block;
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+.mail-heading > h5.mail-name {
+   font-size: 13pt;
+   line-height: 1px;
+   border-bottom: 1px solid black;
+   padding-bottom: 13.5px;
+   width: auto;
+   display: inherit; 
+}
+
+.mail-heading > h5.mail-number {
+   font-size: 9pt;
+   margin-top: 0px;
+   display: inherit; 
+}
+
+div.mail-content,
+div.mail-footer {
+   font-size: 13px;
+   margin-top: 50px;
+   display: inline;
+}
+
+div.mail-content > p {
+   letter-spacing: 0.7px;
+   word-spacing: auto;
+   line-height: 1.5em;
+   text-align: justify;
+}
+
+div.mail-content > p.indent {
+   text-indent: 40px;
+}
+
+ul > li,
+ol > li {
+   margin-top: 10px;
+   margin-bottom:10px;
+}
+
+ul > li > p,
+ul > li > table,
+ol > li > p,
+ol > li > table {
+   line-height: 1.5em;
+   margin-top: 0px;
+   margin-bottom:0px;
+}
+ol > li > table,
+ul > li > table {
+   margin-left:-3px;
+}
+
+
+/* FOOTER MAIL */
+
+div.mail-footer > table {
+   margin-top: 50px;
+}
+
+
+
+        .wrapper {
+            background-image: url(<?php echo base_url("assets/img/logo_watermark.png"); ?>);
+            background-repeat: no-repeat;
+           /*  background-attachment: fixed; */
+            background-position: center; 
+            page-break-inside: avoid;
+            min-height: 1130px;
+        }
+         @media all {
+         .watermark {
+         display: none;
+         background-image: url(<?php echo base_url("assets/img/logo_kop.png"); ?>);
+         float: right;
+         }
+         .pagebreak {
+         display: none;
+         }
+         }
+         @media print {
+         .watermark {
+         display: block;
+         }
+         .pagebreak {
+            display: block;
+            page-break-after: always;
+         }
+         }
+        /*  @page { size: 'A4'; } */
+         @media print {
+         table {page-break-inside: avoid;}
+         div.wrapper {page-break-inside: avoid;}
+         }

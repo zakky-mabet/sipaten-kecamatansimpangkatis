@@ -1,0 +1,148 @@
+	                    <div class="checkbox checkbox-primary">
+	                        <input class="styled" name="syarat[]" value="Fotocopy KTP " type="checkbox">
+	                        <label> </label>
+	                    </div>
+	                    <div class="checkbox checkbox-primary">
+	                        <input class="styled" name="syarat[]" value="Fotocopy KTP Pemohon" type="checkbox">
+	                        <label> </label>
+	                    </div>
+	                    <div class="checkbox checkbox-primary">
+	                        <input class="styled" name="syarat[]" value="Fotocopy KK Pemohon" type="checkbox">
+	                        <label> </label>
+	                    </div>
+	                    <div class="checkbox checkbox-primary">
+	                        <input class="styled" name="syarat[]" value="Surat Keterangan Pindah Jiwa dari Kades/Lurah" type="checkbox">
+	                        <label> </label>
+	                    </div>
+	                    <div class="checkbox checkbox-primary">
+	                        <input class="styled" name="syarat[]" value="Pas Photo Berwarna 4x6 (1 lembar, 2 lembar, 3 lembar)" type="checkbox">
+	                        <label> </label>
+	                    </div>
+	                    <div class="checkbox checkbox-primary">
+	                        <input class="styled" name="syarat[]" value="Formulir KK Perubahan (<small>jika ada anggota keluarga yang tidak ikut pindah jiwa</small>)" type="checkbox">
+	                        <label> </label>
+	                    </div>
+	                    <div class="checkbox checkbox-primary">
+	                        <input class="styled" name="syarat[]" value="Surat Keterangan Domisili perusahaan dari Desa / Kelurahan" type="checkbox">
+	                        <label> </label>
+	                    </div>
+	                    <div class="checkbox checkbox-primary">
+	                        <input class="styled" name="syarat[]" value="Fotocopy SIUP" type="checkbox">
+	                        <label> </label>
+	                    </div>
+	                    <div class="checkbox checkbox-primary">
+	                        <input class="styled" name="syarat[]" value="Fotocopy TDP" type="checkbox">
+	                        <label> </label>
+	                    </div>
+	                    <div class="checkbox checkbox-primary">
+	                        <input class="styled" name="syarat[]" value="Fotocopy SIG" type="checkbox">
+	                        <label> </label>
+	                    </div>	
+	                    <div class="checkbox checkbox-primary">
+	                        <input class="styled" name="syarat[]" value="Fotocopy Akta pendirian perusahaan" type="checkbox">
+	                        <label> </label>
+	                    </div>
+	                    <div class="checkbox checkbox-primary">
+	                        <input class="styled" name="syarat[]" value="Fotocopy bukti Pelunasan PBB" type="checkbox">
+	                        <label> </label>
+	                    </div>
+	                    <div class="checkbox checkbox-primary">
+	                        <input class="styled" name="syarat[]" value="Fotocopy KTP Directur/Pemilik" type="checkbox">
+	                        <label> </label>
+	                    </div>
+	                    <div class="checkbox checkbox-primary">
+	                        <input class="styled" name="syarat[]" value="Fotocopy NPWP Perusahaan" type="checkbox">
+	                        <label> </label>
+	                    </div>
+	                    <div class="checkbox checkbox-primary">
+	                        <input class="styled" name="syarat[]" value="Surat Pengantar dari kelurahan / Desa" type="checkbox">
+	                        <label> </label>
+	                    </div>
+	                    <div class="checkbox checkbox-primary">
+	                        <input class="styled" name="syarat[]" value="Fotocopy KTP daerah Asal" type="checkbox">
+	                        <label> </label>
+	                    </div>
+	                    <div class="checkbox checkbox-primary">
+	                        <input class="styled" name="syarat[]" value="Fotocopy KTP Penanggung Jawab" type="checkbox">
+	                        <label> </label>
+	                    </div>
+	                    <div class="checkbox checkbox-primary">
+	                        <input class="styled" name="syarat[]" value="Pas Photo berwarna 2x3 1 lembar" type="checkbox">
+	                        <label> </label>
+	                    </div>
+	                    <div class="checkbox checkbox-primary">
+	                        <input class="styled" name="syarat[]" value="Surat Keterangan Pindah Jiwa dari daerah Asal" type="checkbox">
+	                        <label> </label>
+	                    </div>
+	                    <div class="checkbox checkbox-primary">
+	                        <input class="styled" name="syarat[]" value="Surat Pengantar/Rekomendasi surat keterangan bersih lingkungan (<small>tanda tangan Kades/Lurah</small>)" type="checkbox">
+	                        <label> </label>
+	                    </div>
+	                    <div class="checkbox checkbox-primary">
+	                        <input class="styled" name="syarat[]" value="Fotocopy Bukti Lunas PBB Tahun Berakhir" type="checkbox">
+	                        <label> </label>
+	                    </div>
+	                    <div class="checkbox checkbox-primary">
+	                        <input class="styled" name="syarat[]" value="Fotocopy NPWP " type="checkbox">
+	                        <label> </label>
+	                    </div>
+	                    <div class="checkbox checkbox-primary">
+	                        <input class="styled" name="syarat[]" value="Fotocopy Akta Pendirian Perusahaan dan perubahan bagi CV/PT" type="checkbox">
+	                        <label> </label>
+	                    </div>
+	                    <div class="checkbox checkbox-primary">
+	                        <input class="styled" name="syarat[]" value="Surat Pernyataan Persetujuan Tetangga (<small>minimal 2 tetangga</small>) Diketahui Kades/Lurah dan Camat beserta Fotocopy KTP" type="checkbox">
+	                        <label> </label>
+	                    </div>
+	                    <div class="checkbox checkbox-primary">
+	                        <input class="styled" name="syarat[]" value="Fotocopy surat Perjanjian Sewa Menyewa lahan/bangunan (<small>jika bukan tempat sendiri</small>)" type="checkbox">
+	                        <label> </label>
+	                    </div>
+	                    <div class="checkbox checkbox-primary">
+	                        <input class="styled" name="syarat[]" value="Surat Pengantar / Rekomandasi izin keramaian yang ditanda tangani Kades / Lurah" type="checkbox">
+	                        <label> </label>
+	                    </div>
+	                    <div class="checkbox checkbox-primary">
+	                        <input class="styled" name="syarat[]" value="Surat pernyataan bertanggung jawab atas pelaksana keramaian" type="checkbox">
+	                        <label> </label>
+	                    </div>
+	                    <div class="checkbox checkbox-primary">
+	                        <input class="styled" name="syarat[]" value="Fotocopy Sertifikat Tanah atau Surat bukti kepemilikan tanah sampai camat" type="checkbox">
+	                        <label> </label>
+	                    </div>
+	                    <div class="checkbox checkbox-primary">
+	                        <input class="styled" name="syarat[]" value="Surat pernyataan tidak keberatan dari pemilik tanah (<small>apabila nama pemilik tanah berbeda dengan pemohon</small>)" type="checkbox">
+	                        <label> </label>
+	                    </div>
+	                    <div class="checkbox checkbox-primary">
+	                        <input class="styled" name="syarat[]" value="Surat Pemohonan bermaterai Rp. 6.000,-" type="checkbox">
+	                        <label> </label>
+	                    </div>
+	                    <div class="checkbox checkbox-primary">
+	                        <input class="styled" name="syarat[]" value="Surat Rekomendasi Kades / Lurah" type="checkbox">
+	                        <label> </label>
+	                    </div>
+	                    <div class="checkbox checkbox-primary">
+	                        <input class="styled" name="syarat[]" value="Fotocopy perjanjian perjanjian/ penguasaan gudang dengan pemilik gudang (<small>jika menyewa gudang</small>)" type="checkbox">
+	                        <label> </label>
+	                    </div>
+	                    <div class="checkbox checkbox-primary">
+	                        <input class="styled" name="syarat[]" value="Fotocopy Keterangan Usaha dari Kades / Lurah" type="checkbox">
+	                        <label> </label>
+	                    </div>
+	                    <div class="checkbox checkbox-primary">
+	                        <input class="styled" name="syarat[]" value="Fotocopy KTP Pemilik/Pengolola" type="checkbox">
+	                        <label> </label>
+	                    </div>
+	                    <div class="checkbox checkbox-primary">
+	                        <input class="styled" name="syarat[]" value="Fotocopy Akta Pendirian" type="checkbox">
+	                        <label> </label>
+	                    </div>
+	                    <div class="checkbox checkbox-primary">
+	                        <input class="styled" name="syarat[]" value="Fotocopy Surat Izin yang lama" type="checkbox">
+	                        <label> </label>
+	                    </div>
+	                    <div class="checkbox checkbox-primary">
+	                        <input class="styled" name="syarat[]" value="Fotocopy data kepengurusan pendidik/pengelola" type="checkbox">
+	                        <label> </label>
+	                    </div>

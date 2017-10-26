@@ -1,0 +1,153 @@
+/*
+ * Skin: Yellow
+ * ------------
+ */
+ a:hover{ color:orange; }
+
+
+ .polygonal { 
+    background-image: url('../../../img/polygonal.jpg') ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+   }
+     
+.content-wrapper {
+  background:transparent;
+
+}
+.main-footer {
+  background:transparent;
+  border: none;
+}
+.primary-tempayan .main-header .navbar {
+  background-color: transparent;
+}
+.primary-tempayan .main-header .navbar .nav > li > a {
+  color: #ffffff;
+}
+.primary-tempayan .main-header .navbar .nav > li > a:hover,
+.primary-tempayan .main-header .navbar .nav > li > a:active,
+.primary-tempayan .main-header .navbar .nav > li > a:focus,
+.primary-tempayan .main-header .navbar .nav .open > a,
+.primary-tempayan .main-header .navbar .nav .open > a:hover,
+.primary-tempayan .main-header .navbar .nav .open > a:focus,
+.primary-tempayan .main-header .navbar .nav > .active > a {
+  background: rgba(0, 0, 0, 0.1);
+  color: #f6f6f6;
+}
+.primary-tempayan .main-header .navbar .sidebar-toggle {
+  color: #ffffff;
+}
+.primary-tempayan .main-header .navbar .sidebar-toggle:hover {
+  color: #f6f6f6;
+  background: rgba(0, 0, 0, 0.1);
+}
+.primary-tempayan .main-header .navbar .sidebar-toggle {
+  color: #fff;
+}
+.primary-tempayan .main-header .navbar .sidebar-toggle:hover {
+  background-color: #e08e0b;
+}
+@media (max-width: 767px) {
+  .primary-tempayan .main-header .navbar .dropdown-menu li.divider {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  .primary-tempayan .main-header .navbar .dropdown-menu li a {
+    color: #fff;
+  }
+  .primary-tempayan .main-header .navbar .dropdown-menu li a:hover {
+    background: #e08e0b;
+  }
+}
+.primary-tempayan .main-header .logo {
+  background-color: #e08e0b;
+  color: #ffffff;
+  border-bottom: 0 solid transparent;
+}
+.primary-tempayan .main-header .logo:hover {
+  background-color: #db8b0b;
+}
+.primary-tempayan .main-header li.user-header {
+  background-color: #f39c12;
+}
+.primary-tempayan .content-header {
+  background: transparent;
+}
+.primary-tempayan .wrapper,
+.primary-tempayan .main-sidebar,
+.primary-tempayan .left-side {
+  background-color: transparent;
+}
+.primary-tempayan .user-panel > .info,
+.primary-tempayan .user-panel > .info > a {
+  color: #fff;
+}
+.primary-tempayan .sidebar-menu > li.header {
+  color: #4b646f;
+  background: #1a2226;
+}
+.primary-tempayan .sidebar-menu > li > a {
+  border-left: 3px solid transparent;
+}
+.primary-tempayan .sidebar-menu > li:hover > a,
+.primary-tempayan .sidebar-menu > li.active > a {
+  color: #ffffff;
+  background: #1e282c;
+  border-left-color: #f39c12;
+}
+.primary-tempayan .sidebar-menu > li > .treeview-menu {
+  margin: 0 1px;
+  background: #2c3b41;
+}
+.primary-tempayan .sidebar a {
+  color: #b8c7ce;
+}
+.primary-tempayan .sidebar a:hover {
+  text-decoration: none;
+}
+.primary-tempayan .treeview-menu > li > a {
+  color: #8aa4af;
+}
+.primary-tempayan .treeview-menu > li.active > a,
+.primary-tempayan .treeview-menu > li > a:hover {
+  color: #ffffff;
+}
+.primary-tempayan .sidebar-form {
+  border-radius: 3px;
+  border: 1px solid #374850;
+  margin: 10px 10px;
+}
+.primary-tempayan .sidebar-form input[type="text"],
+.primary-tempayan .sidebar-form .btn {
+  box-shadow: none;
+  background-color: #374850;
+  border: 1px solid transparent;
+  height: 35px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.primary-tempayan .sidebar-form input[type="text"] {
+  color: #666;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 2px;
+}
+.primary-tempayan .sidebar-form input[type="text"]:focus,
+.primary-tempayan .sidebar-form input[type="text"]:focus + .input-group-btn .btn {
+  background-color: #fff;
+  color: #666;
+}
+.primary-tempayan .sidebar-form input[type="text"]:focus + .input-group-btn .btn {
+  border-left-color: #fff;
+}
+.primary-tempayan .sidebar-form .btn {
+  color: #999;
+  border-top-left-radius: 0;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 0;
+}

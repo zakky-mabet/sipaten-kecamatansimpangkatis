@@ -1,0 +1,119 @@
+a.btn-social,
+.btn-social
+{
+    border-radius: 50%;
+    color: #ffffff !important;
+    display: inline-block;
+    height: 54px;
+    line-height: 54px;
+    margin: 8px 4px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color .3s;
+    webkit-transition: background-color .3s;
+    width: 54px;
+}
+.pad { padding: 50px; }
+.padbottom { padding: 15px; }
+.mar-top-15 { margin-top:-30px; }
+.margin-container {margin-top: 50px}
+.biru { 
+  background: #FE8E3A; /* Old browsers */
+}
+.arial { font-family: arial }
+.foot-brand {
+  color: black;
+  font-size: 1.5em;
+  font-family:'arial';
+  font-weight: 600;
+}
+.text-blue {
+  color: #3C8DC1;
+}
+.font-title { font-size: 0.86em; }
+.font-social { 
+      font-size: 1.4em;
+   }
+.color-black { color: #272822; font-family: arial;}
+.border-radius {
+    border-radius: 20px 20px 60px 20px;
+}
+.border { border: 1pt solid #000; }
+.pad10{ padding: 10px; }   
+.ww { padding-top:10px;
+        padding-bottom: 10px;}  
+.bor { border-bottom: 2pt solid #FFE500; } 
+.tbor { border-top: 2pt solid #FFE500; } 
+.sim { color: white; font-size: 2.5em;}
+.white { color:white; }
+.blue { color: #0073B7; }
+.pading { padding: 10px; color: white }
+.margin { margin-right: 10px; }
+.monitor { width: 100%; }
+.wbiru { color: #00336F; }
+.motto { color: #444; font-size: 1.2em; font-style: italic;}
+.isi { color: #0C3D76; font-size: 1.2em; line-height: 28px;}
+ @media (max-width: 768px) {
+.pad { padding: 0px; }
+}
+.fontmenu { font-size: 1.15em; font-family: 'Arial ', sans-serif;   }
+.namesystem { font-size:5em; /*color: white;*/ color: #777; font-weight: 600;  text-shadow: 2px 1px #000 }
+.spengaduan { font-size:3em; /*color: white;*/ color: black; font-weight: 600;  text-shadow: 2px 1px #000 ; margin-bottom: 10px;}
+.namesystemlogin { font-size:1.7em; /*color: white;*/ color:black; font-weight: 600; padding-bottom: -10px;  }
+.namelayanan { font-size:2em; margin-top: -10px;  color: black; font-weight: 600; /*text-shadow: 2px 1px #000*/ }
+.slogan { font-size: 1em; font-weight: 600;   font-family: 'Arial ', sans-serif; margin-top: -13px;  color: #000; }
+.slogan1 { font-size: 2em;  font-family: 'Arial ', sans-serif; margin-top: -15px;  color: #000; }
+.slogan2 { font-size: 1.1em;  font-weight: 600;  font-family: 'Arial ', sans-serif; margin-top: -10px;  color: #000; }
+.perizinan {  font-size: 1.8em;  font-family: 'Arial ', sans-serif; margin-top: -15px;  color: #444;  }
+.orange { color: #FFE500; }
+#gradient
+      {
+          width: 100%;
+          padding: 0px;
+          margin: 0px;
+        }
+.shadow {box-shadow: 1px 1px 5px #888888;}
+.title-layanan { font-size: 1.3em; margin-top: -7px }        
+.narrow { font-family: "Arial ", Arial, sans-serif; }
+.radius { border-radius: 10px; }
+.zoom {
+  transition: 0.5s;
+}
+.narrow { font-family: "Arial ", Arial, sans-serif; }
+.zoom:hover {
+  color:#0093DD ;
+  cursor: pointer;
+  -webkit-transform: scale(1.15);
+  -moz-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  -o-transform: scale(1.15);
+  transform: scale(1.15);
+}
+.captcha { font-size: 1.5em; letter-spacing: 15px; color: #FF851B }
+.padtop { margin-top: -20px; }
+.margin-top-10 { margin-top: -70px; }
+.system-1 { font-size:2em; }
+.kapital { text-transform: capitalize; }
+.text_left { text-align: left; }
+
+.stroke {
+  color: white;
+  text-shadow: 2px 2px 2px}
+
+input:focus,
+select:focus,
+textarea:focus,
+{
+  border-color: orange !important;
+}
+
+.koba-gra {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#db6b02+0,ef8402+100 */
+background: #db6b02; /* Old browsers */
+background: -moz-linear-gradient(top, #db6b02 0%, #ef8402 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #db6b02 0%,#ef8402 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #db6b02 0%,#ef8402 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db6b02', endColorstr='#ef8402',GradientType=0 ); /* IE6-9 */
+border-bottom: 5pt solid #AD0000;
+}
+

@@ -1,0 +1,7 @@
+		$document = file_get_contents(FCPATH."public/surat/surat_keterangan_gila.rtf");
+		// isi dokumen dinyatakan dalam bentuk string
+		$document = str_replace("[nama_surat]", 'SURAT KETERANGAN PINDAH JIWA', $document);
+		header("Content-type: application/msword");
+		header("Content-disposition: inline; filename=laporan.doc");
+		header("Content-length: ".strlen($document));
+		echo $document;

@@ -1,0 +1,160 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+.nav-extended {
+	background: url('../images/bg.png') repeat-y; 
+}
+
+/*  NAVBAR */
+
+img.brand-logo {
+	width: 250px;
+	margin-top: 5px;
+}
+
+div.navbar-fixed > .input-field {
+    margin-bottom:-20px !important;
+}
+
+div.navbar-fixed > .input-field > .label-icon > i.material-icons {
+    font-size: 28px;
+}
+
+div.navbar-fixed > .input-field > input[type="search"] {
+    padding-top: 3px;
+    padding-bottom: 5px;
+    font-size: 18px;
+    border-top: 1.8px solid white !important;
+}
+div.navbar-fixed > .input-field > input[type="search"]:focus {
+    border-bottom: 1px solid orange !important;
+    box-shadow: 0 1px 0 0 orange !important
+}
+
+div.nav-wrapper > a > .fa {
+  font-size: 25px;
+  padding: 17px 17px;
+}
+
+ul.side-nav > li a > .fa {
+  font-size: 20px;
+}
+
+.heading-text {
+  font-size: 20px;
+}
+
+.upper { 
+  text-transform: uppercase;
+}
+
+div.main-content {
+  padding-top: 30px;
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+
+/*  FORM INPUT */
+
+
+/* label focus color */
+.input-field input:focus + label,
+.input-field textarea.materialize-textarea:focus + label {
+    color: orange !important;
+}
+ /* label underline focus color */
+.row .input-field input:focus,
+.row .input-field textarea.materialize-textarea:focus {
+    border-bottom: 1px solid orange !important;
+    box-shadow: 0 1px 0 0 orange !important
+}
+
+
+
+/* Collecttion */
+.collection {
+    padding-top: 30px;
+}
+
+.collection-item > span.list-name {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/*  LETTER */
+.letter-info {
+  margin-top: 20px;
+  font-size: 12px;
+}
+.letter-info > h6 {
+  border-bottom: 3px solid orange;
+  padding-bottom: 10px;
+  font-weight: 500;
+}
+.letter-info > h6.letter-info-icon:before {
+   font-family: FontAwesome;
+   content: "\f0f6";
+   padding-right: 10px;
+   vertical-align: center;
+   color: orange;
+}
+
+.letter-info > h6.letter-pengantar-icon:before {
+   font-family: FontAwesome;
+   content: "\f15c";
+   padding-right: 10px;
+   vertical-align: center;
+   color: orange;
+}
+
+.letter-info > h6.letter-isian-icon:before {
+   font-family: FontAwesome;
+   content: "\f040";
+   padding-right: 10px;
+   vertical-align: center;
+   color: orange;
+}
+
+.letter-info > h6.letter-pemohon-icon:before {
+   font-family: FontAwesome;
+   content: "\f2bc";
+   padding-right: 10px;
+   vertical-align: center;
+   color: orange;
+}
+
+.letter-info > table   {
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+.letter-info > table tr {
+    padding:0; 
+    margin:0;
+    border-bottom: 0.4px solid orange;
+    vertical-align: top;
+}
+
+li.tab > a > i.fa {
+    font-size:23px;
+    margin-top: 14px !important;
+}
+
+li.tab > a > span.sipaten-badge {
+    padding-bottom: 30px !important;
+    position: inline-block;
+    font-size: 11px;
+    color: white;
+}
