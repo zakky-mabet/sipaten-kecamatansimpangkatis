@@ -16,7 +16,7 @@ class Mantrian extends Sipaten_model {
 		$this->data = array(
 			'date' => date('Y-m-d'),
 			'time' => date('H:i:s'),
-			'status' => 'no',
+			'status' => 'menunggu',
 
 		);
 
@@ -31,7 +31,7 @@ class Mantrian extends Sipaten_model {
 		if($this->db->affected_rows())
 		{
 			$this->template->alert_no_close(
-			'Silahkan Ambil Nomor Antrian Anda !', 
+			'Terimakasih, Silahkan Ambil Nomor Antrian Anda !', 
 			array('type' => 'success','icon' => 'check')
 			);
 		} else {
@@ -61,6 +61,34 @@ class Mantrian extends Sipaten_model {
 		);
 		$this->db->update('antrian', $object, array('id' => $id));
 	}
+
+	// admin
+
+	public function get_all($limit = 20, $offset = 0, $type = 'result')
+	{
+		if($this->input->get('query') != '')
+			$this->db->like('nomor', $this->input->get('query'));
+
+		if($this->input->get('start') != '')
+			$this->db->where('date >= ', $this->input->get('start'));
+
+		if($this->input->get('end') != '')
+			$this->db->where('date <= ', $this->input->get('end'));
+
+		if($this->input->get('status') != 'menunggu')
+			$this->db->like('status', $this->input->get('status'));
+
+		$this->db->order_by('id', 'desc');
+
+		if($type == 'result')
+		{
+			return $this->db->get('antrian', $limit, $offset)->result();
+		} else {
+			return $this->db->get('antrian')->num_rows();
+		}
+	} 
+
+	
 
 }
 

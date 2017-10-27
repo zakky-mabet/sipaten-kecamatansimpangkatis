@@ -104,7 +104,7 @@ echo form_open(site_url('desa/bulk_action'));
 				$number = ( ! $this->page ) ? 0 : $this->page;
 
 				foreach($desa as $row) :
-				?>
+				?> 
 						<tr>
 							<td>
 							<?php  

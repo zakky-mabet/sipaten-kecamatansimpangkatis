@@ -113,3 +113,15 @@ jQuery(function($) {
 
 
 });
+
+// Antrian
+
+	setTimeout(function () {
+     $('.alert').remove();	
+ 	}, 4500);
+
+	function playSound() {
+		var sound = document.getElementById("audio");
+		sound.play();
+	}
+

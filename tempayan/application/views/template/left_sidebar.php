@@ -18,6 +18,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                <i class="fa fa-dashboard"></i> <span>Dashboard</span>
             </a>
         </li>
+        <li class="<?php echo active_link_controller('antrian'); ?>">
+            <a href="<?php echo site_url('antrian') ?>">
+               <i class="fa fa-users"></i> <span>Antrian</span>
+            </a>
+        </li>
 <?php  
 /* PERMISSION */
 if( $this->permission->is_true('surat_perizinan', 'on') ) :

@@ -13,7 +13,7 @@ class Rest_api extends CI_Model
 		
 		$this->load->library( array('curl') );
 	
-		$this->url = "http://kecamatankoba.net/api";
+		$this->url = "http://teitramega.co.id/simpangkatis/api";
 
 		$this->method = $this->input->get('ID');
 	}
