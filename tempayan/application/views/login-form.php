@@ -121,7 +121,7 @@
         </div>
    </div>
    <div class="lockscreen-footer text-center" style="margin-top: 30px; color: #444">
-      <small>Hak Cipta &copy; <?php echo date('Y'); ?> <br> Kec. Koba, Kab. Bangka Tengah. All rights reserved.</small>
+      <small>Hak Cipta &copy; <?php echo date('Y'); ?> <br> Kec. Simpang Katis, Kab. Bangka Tengah. All rights reserved.</small>
    </div>
 </div>
       <!-- /.login-box -->
