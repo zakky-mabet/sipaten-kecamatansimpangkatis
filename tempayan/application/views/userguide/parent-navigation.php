@@ -15,9 +15,9 @@
                     <li class="<?php echo active_link_uri('tutorial-penggunaan').active_link_method('tutorial'); ?>">
                         <a href="<?php echo site_url('userguide/read/tutorial-penggunaan') ?>"> <i class="fa fa-caret-right"></i> Tutorial Penggunaan</a>
                     </li>
-                    <li class="<?php echo active_link_method('release'); ?>">
-                        <a href="<?php echo site_url('userguide/release') ?>"> <i class="fa fa-caret-right"></i>Keterangan Rilis dan Perubahan</a>
-                    </li>
+<!--                     <li class="<?php echo active_link_method('release'); ?>">
+    <a href="<?php echo site_url('userguide/release') ?>"> <i class="fa fa-caret-right"></i>Keterangan Rilis dan Perubahan</a>
+</li> -->
                 </ul>
             </div>
         </div>

@@ -17,8 +17,8 @@
                         </div>                    
                     </div>
                     <div class="col-md-3">
-                        <a href="<?php echo current_url(); ?>" class="btn btn-warning hvr-shadow pull-right"><i class="fa fa-times"></i> Reset</a>
-                        <button type="submit" name="search" value="true" class="btn btn-warning hvr-shadow pull-left"><i class="fa fa-search"></i> Cari</button>
+                        <a href="<?php echo current_url(); ?>" class="btn btn-success hvr-shadow pull-right"><i class="fa fa-times"></i> Reset</a>
+                        <button type="submit" name="search" value="true" class="btn btn-success hvr-shadow pull-left"><i class="fa fa-search"></i> Cari</button>
                     </div>
                 </div>
             </div>

@@ -96,8 +96,8 @@ if( $jumlah_responden != 0)
                     </div>
                 </div>
                 <div class="co-md-3">
-                    <button type="submit" class="btn btn-warning hvr-shadow top"><i class="fa fa-filter"></i> Filter Periode</button>
-                    <a href="<?php echo current_url(); ?>" class="btn btn-warning hvr-shadow top"><i class="fa fa-times"></i> Reset</a>
+                    <button type="submit" class="btn btn-success hvr-shadow top"><i class="fa fa-filter"></i> Filter Periode</button>
+                    <a href="<?php echo current_url(); ?>" class="btn btn-success hvr-shadow top"><i class="fa fa-times"></i> Reset</a>
                 </div>
                 </form>
             </div>

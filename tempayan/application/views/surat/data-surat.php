@@ -41,7 +41,7 @@ echo form_open(current_url(), array('method' => 'get'));
                <div class="input-group input-group-sm">
                   <input type="text" name="query" class="form-control pull-right" name="<?php echo $this->input->get('query') ?>" placeholder="Pencarian ...">
                   <div class="input-group-btn">
-                  	<button type="submit" class="btn btn-warning hvr-shadow"><i class="fa fa-search"></i></button>
+                  	<button type="submit" class="btn btn-success hvr-shadow"><i class="fa fa-search"></i></button>
                   </div>
                </div>
             </div>
