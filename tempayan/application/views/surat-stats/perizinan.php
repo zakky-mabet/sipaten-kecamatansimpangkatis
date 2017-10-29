@@ -24,7 +24,7 @@ Highcharts.chart('chart-perizinan', {
         plotShadow: false,
         type: 'pie'
     },
-    colors: ['#FF9200','#F6CA7C','#FCC700','#E8AB2E','#52BD33','#42CBEC','#CDCDCD','#FF6A19'],
+    colors: ['#BF360C','#4D9C56','#EEFF41','#f57c00','#827717','#607D8B','#01579B'],
     title: {
         text: 'Data Surat Non Perizinan'
     },
@@ -70,7 +70,7 @@ Highcharts.chart('chart-bar', {
     chart: {
         type: 'column'
     },
-    colors:['#FFAB19'],
+    colors:['#4D9C56'],
     title: {
         text: 'Rata-rata Data Surat Keluar'
     },

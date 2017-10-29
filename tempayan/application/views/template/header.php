@@ -8,18 +8,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title><?php echo $title; ?> | <?php echo $this->option->get('nama_sistem'); ?></title>
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <link rel="stylesheet/less" type="text/css" href="<?php echo base_url("public/build/sipaten.less"); ?>" media="screen, projection"/>
+  <link rel="stylesheet/less" type="text/css" href="<?php echo base_url("public/build/sipaten.less?v=".md5(date('YmdHis'))); ?>" media="screen, projection"/>
   <link rel="stylesheet" href="<?php echo base_url("public/bootstrap/css/bootstrap.min.css"); ?>">
   <link rel="stylesheet" href="<?php echo base_url("public/font-awesome/css/font-awesome.min.css"); ?>">
   <link rel="stylesheet" href="<?php echo base_url("public/ionicons/css/ionicons.min.css"); ?>">
   <link rel="stylesheet" href="<?php echo base_url("public/plugins/select2/select2.min.css"); ?>">
   <link rel="stylesheet" href="<?php echo base_url("public/dist/css/AdminLTE.min.css"); ?>">
-  <link rel="stylesheet" href="<?php echo base_url("public/dist/css/skins/skin-sipaten.min.css"); ?>">
+  <link rel="stylesheet" href="<?php echo base_url("public/dist/css/skins/skin-sipaten.css?v=".md5(date('YmdHis'))); ?>">
   <link rel="stylesheet" href="<?php echo base_url("public/dist/css/animate.min.css"); ?>">  
   <link rel="stylesheet" href="<?php echo base_url("public/plugins/bootstrap-checkbox/awesome-bootstrap-checkbox.min.css"); ?>">
   <link rel="stylesheet" href="<?php echo base_url('public/plugins/validation/css/formValidation.min.css') ?>">
   <link rel="stylesheet" href="<?php echo base_url("public/plugins/datepicker/datepicker3.min.css"); ?>">
-  <link rel="stylesheet" href="<?php echo base_url("public/plugins/autocomplete/tautocomplete.min.css"); ?>">
+  <link rel="stylesheet" href="<?php echo base_url("public/plugins/autocomplete/tautocomplete.css?v=".md5(date('YmdHis'))); ?>">
   <link rel="stylesheet" href="<?php echo base_url("public/plugins/bootstrap-tour/css/bootstrap-tour.min.css"); ?>">
   <link rel="stylesheet" href="<?php echo base_url("public/plugins/bootstrap-switch/css/bootstrap-switch.min.css"); ?>">
   <link  rel="stylesheet" href="<?php echo base_url("public/dist/css/hover-min.css"); ?>">
@@ -82,7 +82,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
      div.icon > i.fa { font-size: 60px; }
     .block-no-surat > strong { font-size: 16px; }
      input.no_surat { padding: 0px 0px 0px 0px; width:42px;   border-bottom: none;  border-top: none; border-right: none; border-left: none; text-align:center; font-size: 16px; font-weight: bold;
-       position: inline; color:orange;
+       position: inline; color:red;
      }
     input.no_surat:focus { outline:none !important; }
     div.modal-sm {
@@ -90,16 +90,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     }
     small > a { font-size:inherit; }
     iframe { width: 100%; min-height:530px;  }
-    .box.box-primary { border-top-color:#ffa726;}
-    .nav-pills > li.active > a,
-    .nav-pills > li.active > a:hover,
-    .nav-pills > li.active > a:focus { border-color:#ffa726; }
-    .box.box-solid.box-default > .box-header { background-color: #ffa726; color:white;}
+    .box.box-primary { border-top-color:#4D9C56;}
+    .box.box-solid.box-default > .box-header { background-color: #4D9C56; color:white;}
     .box.box-solid.box-default > .box-header a,
     .box.box-solid.box-default > .box-header .btn {color:white;}
-    .btn-app { background-color: #ffa726; color:white; border:none !important;}
+    .btn-app { background-color: #4D9C56; color:white; border:none !important;}
     .btn-app:hover, 
-    .btn-app:active { background-color: #ff9800; color:white;}
+    .btn-app:active { background-color: #4D9C56; color:white;}
   </style>
 </head>
 <?php

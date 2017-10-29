@@ -1,22 +1,22 @@
-@sipaten : #003D7E;
+@sipaten : #4D9C56;
 @mini_font: 12px;
 @success : #00C66B;
 @gray_border : #E6E7E9;
-@app_orange : #FC9631;
-@app_orange_dark : #F0943F;
-@app_orange_soft :#FDBA45;
+@app_orange : #4D9C56;
+@app_orange_dark : #4CAF50;
+@app_orange_soft : #EEFF41;
 @app_gray : #E6E7E9;
 
-@50  : #fff3e0;
-@100 : #ffe0b2;
-@200  : #ffcc80;
-@300 : #ffb74d;
-@400  : #ffa726;
-@500 : #ff9800;
-@600  : #fb8c00;
-@700 : #f57c00;
-@800  : #ef6c00;
-@900 : #e65100;
+@50  : #E8F5E9;
+@100 : #C8E6C9;
+@200  : #A5D6A7;
+@300 : #81C784;
+@400  : #66BB6A;
+@500 : #4CAF50;
+@600  : #43A047;
+@700 : #388E3C;
+@800  : #2E7D32;
+@900 : #1B5E20;
 @A100  : #ffd180;
 @A200 : #ffab40;
 @A400  : #ff9100;
@@ -76,18 +76,18 @@
 .table-bordered > tbody > tr  th.bg-primary {
   border:  none !important;
   padding-right:5px;
-  background-color:@600;
+  background-color:@600 !important;
 }
 
 .table-bordered {
-  border: 1px solid @gray_border;
+  border: 1px solid @gray_border !important;
   border-right:none;
   border-left:none;
   border-bottom:none; 
   border-top:none;
 }
 .table-bordered > thead {
-  background-color:@app_orange;
+  background-color:@app_orange !important;
   color:white;
 }
 .table-bordered > thead > tr > th,
@@ -134,7 +134,7 @@
 /*  BUTTTON STYLE */
 
 .btn-app {
-  background-color: @400;
+  background-color: @400 !important;
   color:white;
   border:none !important;
 }
@@ -163,7 +163,7 @@ ul.pager > li > a:hover  {
 
 
 .box.box-solid.box-default > .box-header {
-  background-color: @400;
+  background-color: @500 !important;
   color:white;
 }
 .box.box-solid.box-default > .box-header a,
@@ -240,7 +240,7 @@ select.input-lg > option {
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
-  border-color: @500;
+  border-color: @500 !important;
 }
 
 
@@ -288,7 +288,7 @@ select.input-lg > option {
 }
 
 .box-userguide  ul.list-userguide > li a {
-  color:@700;
+  color:@900;
   font-size:15px;
   margin-left: -2em;
   font-weight:bold;
