@@ -27,7 +27,7 @@ echo form_hidden('ID', '');
 							<input type="text" id="cari-nik" class="form-control" value=""> 
 						</div>
 						<div class="col-md-2">
-							<button type="button" id="button-reset" class="btn btn-sm btn-warning btn-flat"><i class="fa fa-times"></i> Reset</button>
+							<button type="button" id="button-reset" class="btn btn-sm btn-success btn-flat"><i class="fa fa-times"></i> Reset</button>
 						</div>
 					</div>
 					<div class="form-group">

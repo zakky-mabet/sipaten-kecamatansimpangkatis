@@ -71,8 +71,8 @@
                 </div>
             </div>
             <div class="box-footer">
-                <a href="<?php echo current_url(); ?>" class="btn btn-warning hvr-shadow pull-left"><i class="fa fa-times"></i> Reset</a>
-                <button type="submit" class="btn btn-warning hvr-shadow pull-right"><i class="fa fa-filter"></i> Filter</button>
+                <a href="<?php echo current_url(); ?>" class="btn btn-success hvr-shadow pull-left"><i class="fa fa-times"></i> Reset</a>
+                <button type="submit" class="btn btn-success hvr-shadow pull-right"><i class="fa fa-filter"></i> Filter</button>
             </div>
             </form>
         </div>

@@ -98,7 +98,7 @@ echo form_open(current_url(), array('method' => 'get'));
 					per Halaman
 				</div>
 				<div class="col-md-3 pull-right" style="padding: 3px;" id="blok-output">
-					<a href="<?php echo site_url("surat_keluar/print_out?{$this->input->server('QUERY_STRING')}"); ?>" class="btn btn-warning hvr-shadow btn-flat btn-print">
+					<a href="<?php echo site_url("surat_keluar/print_out?{$this->input->server('QUERY_STRING')}"); ?>" class="btn btn-success hvr-shadow btn-flat btn-print">
 						<i class="fa fa-print"></i> Cetak
 					</a>
 					<!--

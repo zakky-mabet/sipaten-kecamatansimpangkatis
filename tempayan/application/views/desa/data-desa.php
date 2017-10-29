@@ -41,18 +41,18 @@ echo form_open(current_url(), array('method' => 'get'));
 				<?php  
 				if( $this->permission->is_true('desa', 'create') ) :
 				?>
-					<a href="<?php echo site_url('desa/create') ?>" class="btn btn-warning hvr-shadow btn-flat btn-sm"><i class="fa fa-plus"></i> Tambah Baru</a>
+					<a href="<?php echo site_url('desa/create') ?>" class="btn btn-success hvr-shadow btn-flat btn-sm"><i class="fa fa-plus"></i> Tambah Baru</a>
 				<?php  
 				endif;
 				if( $this->permission->is_true('desa', 'read') ) :
 				?>
-					<a href="<?php echo site_url("desa/print_out?{$this->input->server('QUERY_STRING')}") ?>" class="btn btn-warning hvr-shadow btn-flat btn-sm btn-print"><i class="fa fa-print"></i> Cetak</a>
-					<a href="<?php echo site_url('desa/export') ?>" class="btn btn-warning hvr-shadow btn-flat btn-sm"><i class="fa fa-download"></i> Ekspor</a>
+					<a href="<?php echo site_url("desa/print_out?{$this->input->server('QUERY_STRING')}") ?>" class="btn btn-success hvr-shadow btn-flat btn-sm btn-print"><i class="fa fa-print"></i> Cetak</a>
+					<a href="<?php echo site_url('desa/export') ?>" class="btn btn-success hvr-shadow btn-flat btn-sm"><i class="fa fa-download"></i> Ekspor</a>
 				<?php  
 				endif;
 				if( $this->permission->is_true('desa', 'create') ) :
 				?>
-					<a href="<?php echo site_url('desa/import') ?>" class="btn btn-warning hvr-shadow btn-flat btn-sm"><i class="fa fa-upload"></i> Impor</a>
+					<a href="<?php echo site_url('desa/import') ?>" class="btn btn-success hvr-shadow btn-flat btn-sm"><i class="fa fa-upload"></i> Impor</a>
 				<?php  
 				endif;
 				?>
@@ -61,7 +61,7 @@ echo form_open(current_url(), array('method' => 'get'));
                <div class="input-group input-group-sm">
                   <input type="text" name="query" class="form-control pull-right" name="<?php echo $this->input->get('query') ?>" placeholder="Pencarian ...">
                   <div class="input-group-btn">
-                  	<button type="submit" class="btn btn-warning hvr-shadow"><i class="fa fa-search"></i></button>
+                  	<button type="submit" class="btn btn-success hvr-shadow"><i class="fa fa-search"></i></button>
                   </div>
                </div>
             </div>

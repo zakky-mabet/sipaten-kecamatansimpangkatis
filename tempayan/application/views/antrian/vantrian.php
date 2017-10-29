@@ -48,8 +48,8 @@ echo form_open(current_url(), array('method' => 'get'));
 				</div>
 				<div class="col-md-3">
 				    <div class="form-group">
-                    <button type="submit" class="btn btn-warning hvr-shadow top"><i class="fa fa-filter"></i> Filter</button>
-                    <a href="<?php echo site_url('antrian') ?>" class="btn btn-warning hvr-shadow top" style="margin-left: 10px;"><i class="fa fa-times"></i> Reset</a>
+                    <button type="submit" class="btn btn-success hvr-shadow top"><i class="fa fa-filter"></i> Filter</button>
+                    <a href="<?php echo site_url('antrian') ?>" class="btn btn-success hvr-shadow top" style="margin-left: 10px;"><i class="fa fa-times"></i> Reset</a>
 				    </div>
 				</div>
 			</div>

@@ -38,13 +38,13 @@ echo form_open(current_url(), array('method' => 'get'));
 					per halaman
 				</div>
 				<div class="btn-group col-md-2">
-					<a href="<?php echo site_url('user/create') ?>" class="btn btn-warning hvr-shadow btn-flat btn-sm"><i class="fa fa-plus"></i> Tambah Baru</a>	
+					<a href="<?php echo site_url('user/create') ?>" class="btn btn-success hvr-shadow btn-flat btn-sm"><i class="fa fa-plus"></i> Tambah Baru</a>	
 				</div>
             <div class="col-md-3">
                <div class="input-group input-group-sm">
                   <input type="text" name="query" class="form-control pull-right" name="<?php echo $this->input->get('query') ?>" placeholder="Pencarian ...">
                   <div class="input-group-btn">
-                  	<button type="submit" class="btn btn-warning hvr-shadow"><i class="fa fa-search"></i></button>
+                  	<button type="submit" class="btn btn-success hvr-shadow"><i class="fa fa-search"></i></button>
                   </div>
                </div>
             </div>

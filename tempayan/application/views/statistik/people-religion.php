@@ -8,8 +8,8 @@
                 <div id="chart-populasi-status"></div>
             </div>
             <div class="box-body">
-                <a href="<?php echo site_url('stats_people/print_out/agama') ?>" class="btn btn-warning hvr-shadow btn-flat btn-sm btn-print"><i class="fa fa-print"></i> Cetak</a>
-                <a href="<?php echo site_url('stats_people/export/agama') ?>" class="btn btn-warning hvr-shadow btn-flat btn-sm"><i class="fa fa-download"></i> Ekspor</a>
+                <a href="<?php echo site_url('stats_people/print_out/agama') ?>" class="btn btn-success hvr-shadow btn-flat btn-sm btn-print"><i class="fa fa-print"></i> Cetak</a>
+                <a href="<?php echo site_url('stats_people/export/agama') ?>" class="btn btn-success hvr-shadow btn-flat btn-sm"><i class="fa fa-download"></i> Ekspor</a>
             </div>
             <div class="box-body">
                 <table class="table table-striped table-bordered col-md-12" style="margin-top: 10px;">
@@ -68,7 +68,7 @@ Highcharts.chart('chart-populasi-status', {
         plotShadow: false,
         type: 'pie'
     },
-    colors: ['#ffcc80','#ffb74d', '#ffa726', '#ff9800','#fb8c00','#f57c00','#ef6c00','#e65100','#ffd180','#ffab40','#ff9100','#ff6d00'],
+    colors: ['#4D9C56','#EEFF41','#f57c00','#827717','#607D8B','#01579B'],
     title: {
         text: 'Populasi Penduduk Menurut Agama'
     },

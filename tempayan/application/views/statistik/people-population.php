@@ -19,10 +19,10 @@
             <?php endif; ?>
             </div>
             <div class="box-body">
-                <a href="<?php echo site_url('stats_people/print_out/desa') ?>" class="btn btn-warning hvr-shadow btn-flat btn-sm btn-print"><i class="fa fa-print"></i> Cetak</a>
-                <a href="<?php echo site_url('stats_people/export/desa_population') ?>" class="btn btn-warning hvr-shadow btn-flat btn-sm"><i class="fa fa-download"></i> Ekspor</a>
-                <a href="<?php echo site_url('stats_people') ?>" class="btn btn-warning hvr-shadow btn-flat btn-sm"><i class="fa fa-pie-chart"></i> Grafik Pie</a>
-                <a href="<?php echo site_url('stats_people?chart=bar') ?>" class="btn btn-warning hvr-shadow btn-flat btn-sm"><i class="fa fa-bar-chart"></i> Grafik Batang</a>
+                <a href="<?php echo site_url('stats_people/print_out/desa') ?>" class="btn btn-success hvr-shadow btn-flat btn-sm btn-print"><i class="fa fa-print"></i> Cetak</a>
+                <a href="<?php echo site_url('stats_people/export/desa_population') ?>" class="btn btn-success hvr-shadow btn-flat btn-sm"><i class="fa fa-download"></i> Ekspor</a>
+                <a href="<?php echo site_url('stats_people') ?>" class="btn btn-success hvr-shadow btn-flat btn-sm"><i class="fa fa-pie-chart"></i> Grafik Pie</a>
+                <a href="<?php echo site_url('stats_people?chart=bar') ?>" class="btn btn-success hvr-shadow btn-flat btn-sm"><i class="fa fa-bar-chart"></i> Grafik Batang</a>
             </div>
             <div class="box-body">
                 <table class="table table-striped table-bordered col-md-12" style="margin-top: 10px;">
@@ -172,7 +172,7 @@ Highcharts.chart('chart-populasi-desa-bar', {
     chart: {
         type: 'bar'
     },
-    colors: ['#ffe0b2', '#ffa726','#f57c00','#ffd180','#ff6d00'],
+    colors: ['#f57c00','#4D9C56','#EEFF41'],
     title: {
         text: 'Populasi Penduduk Desa - Kecamatan <?php echo $this->option->get('kecamatan'); ?>'
     },

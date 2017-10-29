@@ -41,18 +41,18 @@ echo form_open(current_url(), array('method' => 'get'));
 				<?php  
 				if( $this->permission->is_true('penduduk', 'create') ) :
 				?>
-					<a href="<?php echo site_url('people/create') ?>" class="btn btn-warning hvr-shadow btn-flat btn-sm"><i class="fa fa-plus"></i> Tambah Baru</a>
+					<a href="<?php echo site_url('people/create') ?>" class="btn btn-success hvr-shadow btn-flat btn-sm"><i class="fa fa-plus"></i> Tambah Baru</a>
 				<?php  
 				endif;
 				if( $this->permission->is_true('penduduk', 'read') ) :
 				?>
-					<a href="<?php echo site_url("people/print_out?{$this->input->server('QUERY_STRING')}") ?>" class="btn btn-warning hvr-shadow btn-flat btn-sm btn-print"><i class="fa fa-print"></i> Cetak</a>
-					<a href="<?php echo site_url("people/export?per_page={$this->per_page}&page={$this->page}") ?>" class="btn btn-warning hvr-shadow btn-flat btn-sm"><i class="fa fa-download"></i> Ekspor</a>	
+					<a href="<?php echo site_url("people/print_out?{$this->input->server('QUERY_STRING')}") ?>" class="btn btn-success hvr-shadow btn-flat btn-sm btn-print"><i class="fa fa-print"></i> Cetak</a>
+					<a href="<?php echo site_url("people/export?per_page={$this->per_page}&page={$this->page}") ?>" class="btn btn-success hvr-shadow btn-flat btn-sm"><i class="fa fa-download"></i> Ekspor</a>	
 				<?php  
 				endif;
 				if( $this->permission->is_true('penduduk', 'create') ) :
 				?>
-					<a href="<?php echo site_url('people/import') ?>" class="btn btn-warning hvr-shadow btn-flat btn-sm"><i class="fa fa-upload"></i> Impor</a>
+					<a href="<?php echo site_url('people/import') ?>" class="btn btn-success hvr-shadow btn-flat btn-sm"><i class="fa fa-upload"></i> Impor</a>
 				<?php  
 				endif;
 				?>
@@ -96,8 +96,8 @@ echo form_open(current_url(), array('method' => 'get'));
 				</div>
 				<div class="col-md-3">
 				    <div class="form-group">
-                    <button type="submit" class="btn btn-warning hvr-shadow top"><i class="fa fa-filter"></i> Filter</button>
-                    <a href="<?php echo site_url('people') ?>" class="btn btn-warning hvr-shadow top" style="margin-left: 10px;"><i class="fa fa-times"></i> Reset</a>
+                    <button type="submit" class="btn btn-success hvr-shadow top"><i class="fa fa-filter"></i> Filter</button>
+                    <a href="<?php echo site_url('people') ?>" class="btn btn-success hvr-shadow top" style="margin-left: 10px;"><i class="fa fa-times"></i> Reset</a>
 				    </div>
 				</div>
 			</div>

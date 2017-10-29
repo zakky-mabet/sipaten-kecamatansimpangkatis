@@ -4,11 +4,8 @@
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <title>Login | <?php echo $this->option->get('nama_sistem'); ?></title>
-      <!-- Tell the browser to be responsive to screen width -->
       <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-      <!-- Bootstrap 3.3.6 -->
       <link rel="stylesheet" href="<?php echo base_url('public/bootstrap/css/bootstrap.min.css'); ?>">
-      <!-- Font Awesome -->
       <link rel="stylesheet" href="<?php echo base_url("public/font-awesome/css/font-awesome.min.css"); ?>">
       <link rel="stylesheet" href="<?php echo base_url("public/ionicons/css/ionicons.min.css"); ?>">
       <link rel="stylesheet" href="<?php echo base_url('public/dist/css/AdminLTE.min.css'); ?>">
@@ -16,9 +13,9 @@
       <link rel="shortcut icon" type="image/png" href="<?php echo base_url("public/image/{$this->option->get('small_logo')}"); ?>"/>
       <style>
          .login-page { 
-            margin-top: 15%;
+            margin-top: 10%;
          height: auto;  
-           background: url(<?php echo base_url('public/image/bg-bupati.jpg'); ?>) no-repeat top fixed; 
+           /* background: url(<?php echo base_url('public/image/bg-bupati.jpg'); ?>) no-repeat top fixed;  */
            -webkit-background-size: cover;
            -moz-background-size: cover;
            -o-background-size: cover;
@@ -26,7 +23,7 @@
          }
          input.form-control { border-radius: 5px; font-size: 1.1em; }
          div.login-box-body { border-radius: 10px;  }
-         span.form-control-feedback { background-color: #FC9631; color: white; }
+         span.form-control-feedback { background-color: #68AC4E; color: white; }
          div.has-feedback > span {  top: 0; left: 0; border-radius: 6px 0px 0px 6px;}
          .padd { padding-left: 40px; }
          .arrow-up {
@@ -37,8 +34,8 @@
          border-right: 10px solid transparent;
          border-bottom: 10px solid white;
          }
-         button.btn-login { border-radius: 5px; font-weight:bold; background-color:#FC9631; color: white }
-         button.btn-login:hover  { background-color: #EF933E; color: white }
+         button.btn-login { border-radius: 5px; font-weight:bold; background-color:#68AC4E; color: white }
+         button.btn-login:hover  { background-color: #267130; color: white }
          button.btn-login:focus, button.btn-login:active  { 
          color: white;
          }
@@ -46,11 +43,11 @@
          .lockscreen-footer { font-family: 'Arial', sans-serif; color:#FC9631; }
          span.blue-sipaten { color: #0093DD; }
          .text-red { color: red; }
-         .captcha > p { font-size:30px; font-family: sans-serif; font-weight: bold; text-align: center; letter-spacing: 30px; color: #FC9631;  }
+         .captcha > p { font-size:30px; font-family: sans-serif; font-weight: bold; text-align: center; letter-spacing: 30px; color: #68AC4E;  }
          div.box-forgot { padding-top:10px;  }
          a.link-forgot {
             text-decoration: none;
-            color: orange
+            color: #68AC4E
          }
       </style>
    </head>
@@ -71,7 +68,7 @@
          <div class="form-group has-feedback">
             <span class="glyphicon glyphicon-lock form-control-feedback" style="color: white;"></span>
             <input type="password" id="login-password" name="password" class="form-control padd" value="<?php echo set_value('password'); ?>" placeholder="Masukkan Password">
-              <div class="checkbox checkbox-primary pull-right">
+              <div class="checkbox checkbox-success pull-right">
                   <input id="checkbox2" class="styled" type="checkbox" onclick="showpassword()" />
                   <label for="checkbox2">
                       Tampilkan Password
@@ -99,7 +96,7 @@
             </div>
          </div>
       </form>
-        <div class="modal animated fade modal-warning" id="forgot-password" tabindex="-1" data-backdrop="static" data-keyboard="false">
+        <div class="modal animated fade modal-success" id="forgot-password" tabindex="-1" data-backdrop="static" data-keyboard="false">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
@@ -124,7 +121,7 @@
         </div>
    </div>
    <div class="lockscreen-footer text-center" style="margin-top: 30px; color: #444">
-      <small>Hak Cipta &copy; <?php echo date('Y'); ?> <br> Kec. Koba, Kab. Bangka Tengah. All rights reserved.</small>
+      <small>Hak Cipta &copy; <?php echo date('Y'); ?> <br> Kec. Simpang Katis, Kab. Bangka Tengah. All rights reserved.</small>
    </div>
 </div>
       <!-- /.login-box -->

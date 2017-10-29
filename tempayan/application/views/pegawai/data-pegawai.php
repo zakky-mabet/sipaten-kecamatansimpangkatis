@@ -38,10 +38,10 @@ echo form_open(current_url(), array('method' => 'get'));
 					per halaman
 				</div>
 				<div class="pull-right">
-					<a href="<?php echo site_url('employee/create') ?>" class="btn btn-flat btn-warning hvr-shadow btn-sm"><i class="fa fa-plus"></i> Tambah Baru</a>
-					<a href="<?php echo site_url("employee/print_out?{$this->input->server('QUERY_STRING')}") ?>" class="btn btn-flat btn-warning hvr-shadow btn-sm btn-print"><i class="fa fa-print"></i> Cetak</a>
-					<a href="<?php echo site_url('employee/export') ?>" class="btn btn-flat btn-warning hvr-shadow btn-sm"><i class="fa fa-download"></i> Ekspor</a>	
-					<a href="<?php echo site_url('employee/import') ?>" class="btn btn-flat btn-warning hvr-shadow btn-sm"><i class="fa fa-upload"></i> Impor</a>
+					<a href="<?php echo site_url('employee/create') ?>" class="btn btn-flat btn-success hvr-shadow btn-sm"><i class="fa fa-plus"></i> Tambah Baru</a>
+					<a href="<?php echo site_url("employee/print_out?{$this->input->server('QUERY_STRING')}") ?>" class="btn btn-flat btn-success hvr-shadow btn-sm btn-print"><i class="fa fa-print"></i> Cetak</a>
+					<a href="<?php echo site_url('employee/export') ?>" class="btn btn-flat btn-success hvr-shadow btn-sm"><i class="fa fa-download"></i> Ekspor</a>	
+					<a href="<?php echo site_url('employee/import') ?>" class="btn btn-flat btn-success hvr-shadow btn-sm"><i class="fa fa-upload"></i> Impor</a>
 				</div>
 			</div>
 			<div class="box-body">
@@ -63,8 +63,8 @@ echo form_open(current_url(), array('method' => 'get'));
 				</div>
 				<div class="col-md-3">
 				    <div class="form-group">
-                    <button type="submit" class="btn btn-warning hvr-shadow top"><i class="fa fa-filter"></i> Filter</button>
-                    <a href="<?php echo site_url('employee') ?>" class="btn btn-warning hvr-shadow top" style="margin-left: 10px;"><i class="fa fa-times"></i> Reset</a>
+                    <button type="submit" class="btn btn-success hvr-shadow top"><i class="fa fa-filter"></i> Filter</button>
+                    <a href="<?php echo site_url('employee') ?>" class="btn btn-success hvr-shadow top" style="margin-left: 10px;"><i class="fa fa-times"></i> Reset</a>
 				    </div>
 				</div>
 			</div>
@@ -107,7 +107,7 @@ echo form_open(site_url('employee/bulk_action'));
 							<th class="text-center">Akses Sistem</th>
 							<th class="text-center">Alamat</th>
 							<th class="text-center">Telepon</th>
-							<th></th>
+							<th width="100"></th>
 						</tr>
 					</thead>
 					<tbody>
@@ -160,7 +160,7 @@ echo form_open(site_url('employee/bulk_action'));
 		                        <input id="checkbox1" type="checkbox"> <label for="checkbox1"></label>
 		                    </div>
 						</th>
-						<th colspan="8">
+						<th colspan="9">
 							<label style="font-size: 11px; margin-right: 10px;">Yang terpilih :</label>
 							<a class="btn btn-xs btn-round btn-danger get-delete-employee-multiple"><i class="fa fa-trash-o"></i> Hapus</a>
 							<small class="pull-right"><?php echo count($employee) . " dari " . $num_employee . " data"; ?></small>
@@ -222,7 +222,7 @@ echo form_close();
 <div class="modal animated fadeIn modal-default" id="modal-set-akses" tabindex="-1" data-backdrop="static" data-keyboard="false">
     <div class="modal-dialog modal-sm">
         <div class="modal-content">
-           	<div class="modal-header bg-yellow">
+           	<div class="modal-header bg-green">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <h4>Pilih hak akses untuk pegawai ini?</h4>
            	</div>
@@ -246,8 +246,8 @@ echo form_close();
            		<input type="hidden" value="" name="pegawai" id="pegawai">
            	</div>
            	<div class="modal-footer">
-                <button type="button" class="btn btn-warning hvr-shadow pull-left" data-dismiss="modal">Batal</button>
-                <button type="submit" class="btn btn-warning hvr-shadow"> Pilih </button>
+                <button type="button" class="btn btn-success hvr-shadow pull-left" data-dismiss="modal">Batal</button>
+                <button type="submit" class="btn btn-success hvr-shadow"> Pilih </button>
            	</div>
            	</form>
         </div>
