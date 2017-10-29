@@ -9,7 +9,7 @@
 					<p> <img width="100%" src="<?php echo base_url('assets/img/layanan.png') ?> " alt="produk sipaten kecamatan koba"> </p>
 			</div>
 			<div class="col-md-5 ">
-				<div class="box box-warning radius">
+				<div class="box box-success radius">
 		            <div class="box-body">
 		     <form id="defaultForm" action="<?php echo current_url('index') ?>" method="post" accept-charset="utf-8">
 		              <div class="form-group">
@@ -106,7 +106,7 @@
 		              </div>
 
 		              <div class="form-group">                
-		                  <input type="submit" id="validateBtn" value="Daftar" name="signup" class="form-control btn btn-warning">
+		                  <input type="submit" id="validateBtn" value="Daftar" name="signup" class="form-control btn btn-success">
 		              </div>
 
 		            </div>

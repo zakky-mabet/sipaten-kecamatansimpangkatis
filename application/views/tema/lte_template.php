@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>  <?php echo (isset($data['title']) ? $data['title'] : "KISS Kecamatan Koba Kabupaten Bangka Tengah") ?></title>
+  <title>  <?php echo (isset($data['title']) ? $data['title'] : "SIMKIS Kecamatan Simpangkatis Kabupaten Bangka Tengah") ?></title>
   <meta name="author" content="Cv. Teitra Mega">
-  <meta name="theme-color" content="#E07202">
+  <meta name="theme-color" content="#0AA658">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <link rel="icon" type="png/jpg" href="<?php echo base_url() ?>assets/img/favicon-title.png">
   <link rel="stylesheet" href="<?php echo base_url('assets/bootstrap/css/bootstrap.css') ?>">
@@ -57,7 +57,7 @@
 <div class="wrapper">
   <?php  if ($this->agent->is_mobile()) {  ?>
   <header class="main-header" >
- <nav class="navbar  navbar-fixed-top pad10 koba-gra" style="border-bottom: 1.2pt solid #D37100; box-shadow: 5px 0px 5px">
+ <nav class="navbar  navbar-fixed-top pad10 gradient" style="border-bottom: 1.2pt solid yellow; box-shadow: 5px 0px 5px">
       <div class="container">
         <div class="navbar-header">
           <div>
@@ -67,9 +67,9 @@
           <div style="float: left; margin-top: 3px;">  
               <b class="sim" style="letter-spacing: 5px;  
               -webkit-text-stroke-width: 1px;
-              -webkit-text-stroke-color: #D37100;">&nbsp;KISS</b>
+              -webkit-text-stroke-color: green;">&nbsp;SIMKIS</b>
               <br> 
-              <div style="margin-top: -10px; font-size: 0.8em;" class="white">&nbsp;&nbsp;&nbsp;&nbsp; Koba District Information  <!--And  Service Center  --></div>
+              <div style="margin-top: -10px; font-size: 0.8em;" class="white">&nbsp;&nbsp;&nbsp;&nbsp; Simpangkatis District Information  <!--And  Service Center  --></div>
           </div>
 
           </div>
@@ -93,7 +93,7 @@
             <li><a href="<?php echo base_url('epenilaian')?>" class=" fontmenu "><span class="fa fa-internet-explorer"></span> - Penilaian</a></li>
             <li class="dropdown">
                 <a href="#" class=" fontmenu dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="fa fa-history"></span> Riwayat <span class="caret"></span></a>
-                <ul class="dropdown-menu white"  style="padding: 10px;  border: none; background: #D06D02; ">
+                <ul class="dropdown-menu white"  style="padding: 10px;  border: none; background: #149848; ">
                   <li style="padding: 5px; color: white;"><a href="<?php echo base_url('epengaduan/histori')?>" class="white fontmenu "></span><span style="color: white">Pengaduan</span></a></li>
                   <li style="padding: 5px;"><a href="<?php echo base_url('epelayanan/histori')?>" class="white fontmenu "><span style="color: white">Pelayanan</span></a></li>
                 </ul>
@@ -236,7 +236,7 @@
   </header> 
  <?php } else { ?> 
      <header class="main-header  " >
-    <nav class="navbar navbar-fixed-top koba-gra" style="border-bottom: 1.2pt solid #D37100; box-shadow: 5px 0px 5px" >
+    <nav class="navbar navbar-fixed-top gradient" style="border-bottom: 1.2pt solid yellow; box-shadow: 5px 0px 5px" >
       <div class="container">
         <div class="navbar-header">
           <div>
@@ -244,11 +244,11 @@
             <img  src="<?php echo base_url()?>assets/img/color-logo.png" alt="Logo Bangka Tengah">
           </div></a>
           <div style="float: left; margin-top: 3px;">  
-              <b class="sim" style="letter-spacing: 8px;  
+              <b class="sim" style="letter-spacing: 4px;  
               -webkit-text-stroke-width: 1px;
-              -webkit-text-stroke-color: #D37100;">&nbsp;KISS</b>
+              -webkit-text-stroke-color: green;">&nbsp;SIMKIS</b>
               <br> 
-              <div style="margin-top: -10px; font-size: 0.9em;" class="white">&nbsp;&nbsp;&nbsp;&nbsp; Koba District Information  And Service Center</div>
+              <div style="margin-top: -10px; font-size: 0.9em;" class="white">&nbsp;&nbsp;&nbsp;&nbsp; Simpangkatis District Information  And Service Center</div>
           </div>  
           </div>
         </div>
@@ -268,7 +268,7 @@
             <li><a href="<?php echo base_url('epenilaian')?>" class=" fontmenu "><span class="fa fa-internet-explorer"></span> - Penilaian</a></li>
             <li class="dropdown">
                 <a href="#" class=" fontmenu dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="fa fa-history"></span> Riwayat <span class="caret"></span></a>
-                <ul class="dropdown-menu white"  style="padding: 10px;  border: none; background: #D06D02; ">
+                <ul class="dropdown-menu white"  style="padding: 10px;  border: none; background: #149848; ">
                   <li style="padding: 5px; color: white;"><a href="<?php echo base_url('epengaduan/histori')?>" class="white fontmenu "></span><span style="color: white">Pengaduan</span></a></li>
                   <li style="padding: 5px;"><a href="<?php echo base_url('epelayanan/histori')?>" class="white fontmenu "><span style="color: white">Pelayanan</span></a></li>
                 </ul>
@@ -375,7 +375,7 @@
     <div class="container color-black padbottom">
         <div class="col-md-6">   
         <?php date_default_timezone_set("Asia/Bangkok"); ?>
-       Copyright <?php $thn = ( date('Y') == 2017 ) ? date('Y') : '2017-'.date('Y'); echo '&copy; '.$thn; ?> <span>Kec.Koba Bangka Tengah</span> 
+       Copyright <?php $thn = ( date('Y') == 2017 ) ? date('Y') : '2017-'.date('Y'); echo '&copy; '.$thn; ?> <span>Kec.Simpangkatis Bangka Tengah</span> 
         <br>
           <p style="margin:-6px; font-size:0.8em; line-height: 20px">&nbsp;&nbsp;<?php echo ($this->agent->is_mobile()) ? '' :'Developed by : <a href="https://www.facebook.com/teitramega">CV. Teitra Mega</a>';?></p>
           <p style="margin:-6px; font-size:0.8em; line-height: 20px">&nbsp;&nbsp;<?php echo ($this->agent->is_mobile()) ? 'Developed by : <a href="https://www.facebook.com/teitramega"> CV. Teitra Mega</a>' :'';?></p>

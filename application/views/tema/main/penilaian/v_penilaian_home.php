@@ -17,7 +17,7 @@
             <!-- Widget: user widget style 1 -->
             <div class="box box-widget widget-user shadow   border-radius <?php  if ($this->agent->is_mobile()) { echo '';  } else { echo 'zoom'; } ?>">
               <!-- Add the bg color to the header using any of the bg-* classes -->
-              <div class="widget-user-header bg-orange polygonal  border-radius  ">
+              <div class="widget-user-header bg-green polygonal  border-radius  ">
                 <h3 class="widget-user-username text-center "><b>Penilaian Pelayanan</b></h3>
                 <h5 class="widget-user-desc"></h5>
               </div>
@@ -27,7 +27,7 @@
               <div class="box-footer  border-radius">
                 <div class="row text-center">
                 <p></p>
-                  <p class="text-orange">Penilaian  kinerja pelayanan </p>
+                  <p class="text-green">Penilaian  kinerja pelayanan </p>
                 </div>
               </div>
              </div>  
@@ -48,7 +48,7 @@
               <div class="box-footer border-radius">
                 <div class="row text-center">
                 <p></p>
-                  <p class="text-orange">Penilaian  kinerja pengaduan </p>
+                  <p class="text-green">Penilaian  kinerja pengaduan </p>
                 </div>
               </div>
              </div> 

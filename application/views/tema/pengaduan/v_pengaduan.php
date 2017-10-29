@@ -26,7 +26,7 @@
 	            <div class="box-footer border-radius">
 	              <div class="row text-center">
 	              <p></p>
-	              	<p class="text-orange">Pengaduan Masyarakat</p>
+	              	<p class="text-green">Pengaduan Masyarakat</p>
 	              </div>
 	            </div>
 	           </div>  
@@ -45,7 +45,7 @@
 	            <div class="box-footer border-radius">
 	              <div class="row text-center">
 	              <p></p>
-	              	<p class="text-orange"> Riwayat Pengaduan</p>
+	              	<p class="text-green"> Riwayat Pengaduan</p>
 	              </div>
 	            </div>
 	           </div>  
@@ -64,7 +64,7 @@
 	            <div class="box-footer border-radius">
 	              <div class="row text-center">
 	              <p></p>
-	              	<p class="text-orange">Syarat dan Ketentuan</p>
+	              	<p class="text-green">Syarat dan Ketentuan</p>
 	              </div>
 	            </div>
 	           </div>  

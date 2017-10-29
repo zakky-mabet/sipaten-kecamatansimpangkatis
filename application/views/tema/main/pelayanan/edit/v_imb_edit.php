@@ -1,7 +1,7 @@
 <div <?php echo ($this->agent->is_mobile()) ? 'class="container margin-container" style="padding-top:50px;"' : $browser ="style='padding-top:80px;' class='container'" ; ?>>
  <div class="col-md-10 col-md-offset-1">
  <div class="row">
-	 <div class="box box-warning radius">
+	 <div class="box box-success radius">
   <div class="box-header with-border ">
   <div class="row">
   	<section class="content-header">
@@ -37,7 +37,7 @@
              $d_berkas  = json_decode($value->berkas_syarat);  
            ?>
     <div class="col-md-6 col-md-offset-3">
-          <div class="box box-warning shadow">
+          <div class="box box-success shadow">
             <div class="box-header with-border">
               <h3 class="box-title">Data Pemohon</h3>
             </div>
@@ -71,7 +71,7 @@
   <div class="col-sm-12">
   <br>
       <p>
-     Yang bertanda tangan di bawah ini Kepala Desa/Kelurahan : ... Koba Kab. Bangka Tengah, menerangkan dengan sebenarnya bahwa :
+     Yang bertanda tangan di bawah ini Kepala Desa/Kelurahan : ... Simpangkatis Kab. Bangka Tengah, menerangkan dengan sebenarnya bahwa :
 
       </p>
   </div>
@@ -109,7 +109,7 @@
           <div class="form-group">
             <label  class="col-sm-2 control-label font-title">Alamat <span class="text-red">*</span></label>
             <div class="col-sm-10">
-              <textarea name="alamat"  placeholder="Contoh : Jln. Raya Koba No. 141 RT. 05 Kel. Koba Kecamatan Koba Kabupaten Bangka Tengah" class="form-control"><?php echo $d_surat->alamat ;?></textarea>
+              <textarea name="alamat"  placeholder="Contoh : Jln. Raya Simpangkatis No. 141 RT. 05 Kel. Simpangkatis Kecamatan Simpangkatis Kabupaten Bangka Tengah" class="form-control"><?php echo $d_surat->alamat ;?></textarea>
               <?php echo form_error('alamat','<small class="text-red">','</small>'); ?>
             </div>
           </div>
@@ -141,7 +141,7 @@
           <div class="form-group">
             <label  class="control-label col-md-2 col-xs-12 font-title">Alamat Perusahaan : <strong class="text-red">*</strong></label>
             <div class="col-md-10">
-              <textarea class="form-control" placeholder="Contoh : Jln. Raya Koba No. 141 RT. 05 Kel. Koba Kecamatan Koba Kabupaten Bangka Tengah" name="alamat_perusahaan" rows="3"><?php echo $d_surat->alamat_perusahaan ;?></textarea>
+              <textarea class="form-control" placeholder="Contoh : Jln. Raya Simpangkatis No. 141 RT. 05 Kel. Simpangkatis Kecamatan Simpangkatis Kabupaten Bangka Tengah" name="alamat_perusahaan" rows="3"><?php echo $d_surat->alamat_perusahaan ;?></textarea>
               <?php echo form_error('alamat_perusahaan','<small class="text-red">','</small>'); ?>
             </div>
           </div>
@@ -157,7 +157,7 @@
           <div class="form-group">
             <label  class="control-label col-md-2 col-xs-12 font-title">Lokasi Bangunan : <strong class="text-red">*</strong></label>
             <div class="col-md-10">
-              <textarea class="form-control" placeholder="Contoh : Jln. Raya Koba No. 141 RT. 05 Kel. Koba Kecamatan Koba Kabupaten Bangka Tengah" name="lokasi_bangunan" rows="3"><?php echo $d_surat->lokasi_bangunan ;?></textarea>
+              <textarea class="form-control" placeholder="Contoh : Jln. Raya Simpangkatis No. 141 RT. 05 Kel. Simpangkatis Kecamatan Simpangkatis Kabupaten Bangka Tengah" name="lokasi_bangunan" rows="3"><?php echo $d_surat->lokasi_bangunan ;?></textarea>
                <?php echo form_error('lokasi_bangunan','<small class="text-red">','</small>'); ?>
             </div>
           </div>
@@ -236,7 +236,7 @@
           <div class="form-group">
             <label for="email" class="control-label col-md-2 col-xs-12 font-title">Alamat Pemilik Tanah : <strong class="text-primary">*</strong></label>
             <div class="col-md-10">
-              <textarea name="alamat_pemilik_tanah" placeholder="Contoh : Jln. Raya Koba No. 141 RT. 05 Kel. Koba Kecamatan Koba Kabupaten Bangka Tengah" rows="3" class="form-control"><?php echo $d_surat->alamat_pemilik_tanah ?></textarea>
+              <textarea name="alamat_pemilik_tanah" placeholder="Contoh : Jln. Raya Simpangkatis No. 141 RT. 05 Kel. Simpangkatis Kecamatan Simpangkatis Kabupaten Bangka Tengah" rows="3" class="form-control"><?php echo $d_surat->alamat_pemilik_tanah ?></textarea>
            
             </div>
           </div>
@@ -263,8 +263,8 @@
           </div>
   </div>
   <div class="col-sm-12">
-      <table class="table bg-warning table-bordered font-title">
-      <h4 class="text-orange">Persyaratan Pembuatan <?php echo $syarat ?> :</h4>
+      <table class="table bg-success table-bordered font-title">
+      <h4 class="text-green">Persyaratan Pembuatan <?php echo $syarat ?> :</h4>
         <thead >
           <tr >
             <th class="text-center">#</th>
@@ -358,12 +358,12 @@
 
   <div class="box-footer with-border">
         <div class="col-md-4 col-xs-5">
-          <a href="<?php echo base_url('epelayanan'); ?>" class="btn btn-app bg-orange pull-right">
+          <a href="<?php echo base_url('epelayanan'); ?>" class="btn btn-app bg-green pull-right">
             <i class="ion ion-reply"></i> Kembali
           </a>
         </div>
         <div class="col-md-6 col-xs-6">
-          <button type="submit" class="btn btn-app bg-orange pull-right">
+          <button type="submit" class="btn btn-app bg-green pull-right">
             <i class="fa fa-save"></i> Ajukan Permohonan
           </button>
         </div>

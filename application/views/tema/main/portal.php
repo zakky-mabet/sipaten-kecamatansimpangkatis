@@ -18,8 +18,8 @@
       	 <?php  if ($this->agent->is_mobile()) {  ?>
         	<div  class="col-md-12 text-center" style="margin-top: -80px;">
         		&nbsp;<br>&nbsp;<br>
-				<h1  style="color:#444; margin:10px;  font-size:5.3em; font-weight: 600; letter-spacing:7px;  text-shadow: 1px 1px 1px #000;">KISS	</h1>
-	        	<p style="margin:-15px;" >Koba District  Information &amp; Services Center</p>	
+				<h1  style="color:#444; margin:10px;  font-size:4em; font-weight: 600; letter-spacing:5px;  text-shadow: 1px 1px 1px #000;">SIMKIS	</h1>
+	        	<p style="margin:-15px;" >Simpangkatis District  Information &amp; Services Center</p>	
 				<br>&nbsp;
         	</div>
         <?php } ?>
@@ -46,7 +46,7 @@
 	            <div class="box-footer border-radius">
 	              <div class="row text-center border-radius">
 	              <p></p>
-	              	<p class="text-orange">Situs Resmi Kecamatan Koba </p>
+	              	<p class="text-green">Situs Resmi Kecamatan Koba </p>
 	              </div>
 	            </div>
 	           </div>  
@@ -67,7 +67,7 @@
 	            <div class="box-footer border-radius">
 	              <div class="row text-center">
 	              <p></p>
-	              	<p class="text-orange">Perizinan &amp; Non Perizinan </p>
+	              	<p class="text-green">Perizinan &amp; Non Perizinan </p>
 	              </div>
 	            </div>
 	           </div>  
@@ -88,7 +88,7 @@
 	            <div class="box-footer border-radius">
 	              <div class="row  border-radius text-center">
 	              <p></p>
-	              	<p class="text-orange">Pengaduan Masyarakat</p>
+	              	<p class="text-green">Pengaduan Masyarakat</p>
 	              </div>
 	            </div>
 	           </div>  
@@ -110,7 +110,7 @@
 	            <div class="box-footer border-radius">
 	              <div class="row text-center">
 	              <p></p>
-	              	<p class="text-orange">Penilaian Kinerja</p>
+	              	<p class="text-green">Penilaian Kinerja</p>
 	              </div>
 	            </div>
 	           </div>  

@@ -1,7 +1,7 @@
 <div class="row">
 	<div class="col-md-8 col-md-offset-2 col-xs-12"><?php echo $this->session->flashdata('pesan'); ?></div>
 	<div class="col-md-12">
-		<div class="box box-warning">
+		<div class="box box-success">
 			<div class="box-header with-border">
 				<div class="col-md-7">
 					<h3 class="box-title"><?php echo $get->judul ?></h3>

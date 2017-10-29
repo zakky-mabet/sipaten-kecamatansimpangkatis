@@ -1,6 +1,6 @@
 <div <?php echo ($this->agent->is_mobile()) ? 'class="container margin-container" style="padding-top:50px;"' : $browser ="style='padding-top:80px;' class='container'" ; ?>>
  <div class="row">
-	 <div class="box box-warning radius">
+	 <div class="box box-success radius">
   <div class="box-header with-border ">
   <div class="row">
   	<section class="content-header">
@@ -52,7 +52,7 @@
                 <tr>
                   <td><?php echo $no++; ?></td>
                   <td  style="text-transform: capitalize;" >
-                  <a class="text-orange" href="<?php echo base_url('epengaduan/detail/'.$row->ID) ?>"><?php echo $row->ID_pengaduan ?></a></td>
+                  <a class="text-green" href="<?php echo base_url('epengaduan/detail/'.$row->ID) ?>"><?php echo $row->ID_pengaduan ?></a></td>
                   <td class="text-center" width="100">                
                       <?php 
                       if ($row->status_pesan == 'no') { ?>

@@ -1,6 +1,6 @@
 <div <?php echo ($this->agent->is_mobile()) ? 'class="container margin-container" style="padding-top:50px;"' : $browser ="style='padding-top:80px;' class='container'" ; ?>>
  <div class="row">
-	 <div class="box box-warning radius">
+	 <div class="box box-success radius">
   <div class="box-header with-border ">
   	<section class="content-header">
      <h1>

@@ -2,7 +2,7 @@
     <div class="row">
   <div class="col-md-8 col-md-offset-2 col-xs-12"></div>
   <dov class="col-md-8 col-md-offset-2 col-xs-12">
-    <div class="box box-warning radius">
+    <div class="box box-success radius">
     <form action="<?php echo site_url('epengaduan/create');  ?>"  class="form-horizontal"  method="post" accept-charset="utf-8" enctype="multipart/form-data"/>
     <div class="box-header with-border ">
       <div class="row">
@@ -59,7 +59,7 @@
 
       <div class="box-footer with-border">
         <div class="col-md-4 col-xs-5">
-          <a href="<?php echo base_url('epengaduan'); ?>" class="btn btn-app pull-right">
+          <a href="<?php echo base_url('epengaduan'); ?>" class="btn btn-app  pull-right">
             <i class="ion ion-reply"></i> Kembali
           </a>
         </div>

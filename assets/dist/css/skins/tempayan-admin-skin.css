@@ -1,17 +1,17 @@
 .bg-1 {
-  background: #FB8C00;
+  background: #148748;
   color: white;
 }
 .bg-2 {
-  background: #FF9800;
+  background: #148748;
   color: white;
 }
 .bg-3 {
-  background: #FFA726;
+  background: #149548;
   color: white;
 }
 .bg-4 {
-  background: #FFB74D;
+  background: #14A948;
   color: white;
 }
 
@@ -20,7 +20,7 @@
  * ------------
  */
 .skin-yellow-light .main-header .navbar {
-  background-color: #f39c12;
+  background-color: #149848;
 }
 .skin-yellow-light .main-header .navbar .nav > li > a {
   color: #ffffff;
@@ -46,7 +46,7 @@
   color: #fff;
 }
 .skin-yellow-light .main-header .navbar .sidebar-toggle:hover {
-  background-color: #e08e0b;
+  background-color: #128B54;
 }
 @media (max-width: 767px) {
   .skin-yellow-light .main-header .navbar .dropdown-menu li.divider {
@@ -56,11 +56,11 @@
     color: #fff;
   }
   .skin-yellow-light .main-header .navbar .dropdown-menu li a:hover {
-    background: #e08e0b;
+    background: #128B54;
   }
 }
 .skin-yellow-light .main-header .logo {
-  background-color: #f39c12;
+  background-color: #148748;
   color: #ffffff;
   border-bottom: 0 solid transparent;
 }
@@ -68,7 +68,7 @@
   background-color: #f39a0d;
 }
 .skin-yellow-light .main-header li.user-header {
-  background-color: #f39c12;
+  background-color: #148748;
 }
 .skin-yellow-light .content-header {
   background: transparent;
@@ -96,7 +96,7 @@
   background: #f9fafc;
 }
 .skin-yellow-light .sidebar-menu > li > a {
-  border-left: 3px solid orange;
+  border-left: 3px solid green;
   font-weight: 600;
   background-color: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f1f1f1+0,dbdbdb+100 */
 background: #F9F9F9; /* Old browsers */

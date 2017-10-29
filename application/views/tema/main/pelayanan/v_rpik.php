@@ -1,7 +1,7 @@
 <div <?php echo ($this->agent->is_mobile()) ? 'class="container margin-container" style="padding-top:50px;"' : $browser ="style='padding-top:80px;' class='container'" ; ?>>
  <div class="col-md-10 col-md-offset-1">
  <div class="row">
-	 <div class="box box-warning radius">
+	 <div class="box box-success radius">
   <div class="box-header with-border ">
   <div class="row">
   	<section class="content-header">
@@ -26,7 +26,7 @@
             <br>
       <form action="<?php base_url('epelayanan/rpik') ?>" method="post" enctype="multipart/form-data" accept-charset="utf-8">
     <div class="col-md-8 col-md-offset-2">
-          <div class="box box-warning shadow">
+          <div class="box box-success shadow">
             <div class="box-header with-border">
               <h3 class="box-title">Data Pemohon</h3>
             </div>
@@ -77,7 +77,7 @@
   <div class="col-sm-12">
   <br>
       <p>
-     Memperhatikan Surat Pengantar dari Lurah <span class="text-orange" id="neededdesa"></span> Kecamatan Koba Nomor : <span class="text-orange" id="neededno_surat"></span> tanggal -, dengan ini Camat Koba menerangkan bahwa :
+     Memperhatikan Surat Pengantar dari Lurah <span class="text-green" id="neededdesa"></span> Kecamatan Simpangkatis Nomor : <span class="text-green" id="neededno_surat"></span> tanggal -, dengan ini Camat Simpangkatis menerangkan bahwa :
       </p>
   </div>
   <div class="col-sm-12 form-horizontal">
@@ -133,7 +133,7 @@
           <div class="form-group"> 
             <label  class="col-sm-2 control-label font-title">Alamat Pemohon <span class="text-red">*</span></label>
             <div class="col-sm-10">
-              <textarea name="alamat_pemohon"  placeholder="Contoh : Jln. Raya Koba No. 141 RT. 05 Kel. Koba Kecamatan Koba Kabupaten Bangka Tengah" class="form-control"><?php echo set_value('alamat_pemohon');?></textarea>
+              <textarea name="alamat_pemohon"  placeholder="Contoh : Jln. Raya Simpangkatis No. 141 RT. 05 Kel. Simpangkatis Kecamatan Simpangkatis Kabupaten Bangka Tengah" class="form-control"><?php echo set_value('alamat_pemohon');?></textarea>
               <?php echo form_error('alamat_pemohon','<small class="text-red">','</small>'); ?>
             </div>
           </div>
@@ -182,7 +182,7 @@
           <div class="form-group">
             <label  class="col-sm-2 control-label font-title">Tempat Acara <span class="text-red">*</span></label>
             <div class="col-sm-10">
-              <textarea name="tempat_acara"  placeholder="Contoh : Jln. Raya Koba No. 141 RT. 05 Kel. Koba Kecamatan Koba Kabupaten Bangka Tengah" class="form-control"><?php echo set_value('tempat_acara');?></textarea>
+              <textarea name="tempat_acara"  placeholder="Contoh : Jln. Raya Simpangkatis No. 141 RT. 05 Kel. Simpangkatis Kecamatan Simpangkatis Kabupaten Bangka Tengah" class="form-control"><?php echo set_value('tempat_acara');?></textarea>
               <?php echo form_error('tempat_acara','<small class="text-red">','</small>'); ?>
             </div>
           </div>
@@ -212,8 +212,8 @@
   </div>
 
   <div class="col-sm-12">
-      <table class="table bg-warning table-bordered font-title" >
-      <h4 class="text-orange">Persyaratan <?php echo $crumb; ?> :</h4>
+      <table class="table bg-success table-bordered font-title" >
+      <h4 class="text-green">Persyaratan <?php echo $crumb; ?> :</h4>
         <thead >
           <tr >
             <th class="text-center">#</th>
@@ -258,12 +258,12 @@
 
   <div class="box-footer with-border">
         <div class="col-md-4 col-xs-5">
-          <a href="<?php echo base_url('epelayanan'); ?>" class="btn btn-app bg-orange pull-right">
+          <a href="<?php echo base_url('epelayanan'); ?>" class="btn btn-app bg-green pull-right">
             <i class="ion ion-reply"></i> Kembali
           </a>
         </div>
         <div class="col-md-6 col-xs-6">
-          <button type="submit" class="btn btn-app bg-orange pull-right">
+          <button type="submit" class="btn btn-app bg-green pull-right">
             <i class="fa fa-save"></i> Ajukan Permohonan
           </button>
         </div>

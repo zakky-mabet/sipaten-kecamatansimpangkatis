@@ -49,8 +49,6 @@
 		        </button>
 		       </a>
 
-		       <input onclick='responsiveVoice.speak("Panggilan, Kepada, Nomor, Antrian, <?php echo terbilang(7); ?>, Silahkan, Menuju, Loket,  Muhamad Zakky. Terima kasih ! ", "Indonesian Female");' type='button' value='🔊 Play' />
-
 	  		</div>
 	  	</div>
 	</div>

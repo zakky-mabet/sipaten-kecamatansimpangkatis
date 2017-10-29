@@ -10,7 +10,7 @@ class Website extends CI_Controller {
 	public function index()
 	{
 		$data = array(
-			'title' => 'Website Portal -  Kecamatan Koba - Kabupaten Bangka Tengah',
+			'title' => 'Website Portal -  Kecamatan Simpangkatis - Kabupaten Bangka Tengah',
 			'crumb' => 'E-Pelayanan',
 			);
 		$this->template->view('main/website/maintenance', $data);

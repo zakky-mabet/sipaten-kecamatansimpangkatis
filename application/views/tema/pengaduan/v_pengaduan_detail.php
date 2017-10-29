@@ -1,6 +1,6 @@
 <div <?php echo ($this->agent->is_mobile()) ? 'class="container margin-container" style="padding-top:50px;"' : $browser ="style='padding-top:80px;' class='container'" ; ?>>
  <div class="row">
-	 <div class="box box-warning radius">
+	 <div class="box box-success radius">
       <div class="box-header with-border ">
       <div class="row">
       	<section class="content-header">
@@ -50,7 +50,7 @@
       <table class="table table-bordered table-striped ">
                 <tr>
                   <th class="font-title" style="width: 20%">ID Pengaduan</th>
-                  <td class="text-orange"><?php echo $value->ID_pengaduan  ?></td>
+                  <td class="text-green"><?php echo $value->ID_pengaduan  ?></td>
                 </tr>
                 <tr>
                   <th class="font-title" style="width: 20%">Judul</th>
@@ -113,7 +113,7 @@
                     </div>
                     <div class="modal-footer">
                     <button type="button" class="btn btn-default " data-dismiss="modal">Tidak</button>
-                    <a  href="<?php echo base_url('epengaduan/hapus').'/'.$value->ID; ?>"  class="btn btn-warning">Ya</a>
+                    <a  href="<?php echo base_url('epengaduan/hapus').'/'.$value->ID; ?>"  class="btn btn-success">Ya</a>
                     </div>
                   </div>
                 </div>
@@ -128,8 +128,8 @@
       </div>
       <div class="box-footer with-border radius">
         <div class="col-md-12">
-          <p class="text-orange">
-           <span class="text-orange fa fa-info"> </span> pesan pengaduan bisa di ubah dan hapus  jika belum ditindaklanjuti 
+          <p class="text-green">
+           <span class="text-green fa fa-info"> </span> pesan pengaduan bisa di ubah dan hapus  jika belum ditindaklanjuti 
           </p>
         </div>
       </div>

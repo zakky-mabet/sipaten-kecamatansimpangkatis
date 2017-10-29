@@ -1,7 +1,7 @@
 <div class="row">
 	<div class="col-md-8 col-md-offset-2 col-xs-12"><?php echo $this->session->flashdata('pesan'); ?></div>
 	<div class="col-md-12">
-		<div class="box box-warning">
+		<div class="box box-success">
 			<div class="box-header with-border">
 				<div class="col-md-7">
 					<h3 class="box-title">Data Pengaduan Masyarakat</h3>
@@ -41,7 +41,7 @@ echo form_open(current_url(), array('method' => 'get'));
 	               <div class="input-group input-group-sm">
 	                  <input type="text" name="query" class="form-control pull-right" name="<?php echo $this->input->get('query') ?>" placeholder="Pencarian ...">
 	                  <div class="input-group-btn">
-	                  	<button type="submit" class="btn btn-warning hvr-shadow"><i class="fa fa-search"></i></button>
+	                  	<button type="submit" class="btn btn-success hvr-shadow"><i class="fa fa-search"></i></button>
 	                  </div>
 	               </div>
 	            </div>
@@ -57,7 +57,7 @@ echo form_close();
 echo form_open(site_url('administrator/pengaduan/bulk_action'));
 ?>
 				<table class="table table-hover table-bordered col-md-12" style="margin-top: 10px;">
-					<thead class="bg-orange">
+					<thead class="bg-green">
 						<tr>
 							<th width="30">
 							

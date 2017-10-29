@@ -21,7 +21,7 @@
       }
      ?>
         <div class="col-md-3">
-          <div class="box box-warning radius">
+          <div class="box box-success radius">
             <div class="box-body box-profile">
             <a class="kapital" data-toggle="lightbox"  href="<?php echo base_url(); ?>assets/img/img-user/<?php if ($row->photo == NULL ) { echo "avatar.jpg"; } else { echo $row->photo; } ?>" data-title="<?php echo ucfirst($row->nama_lengkap) ?>" data-footer="" >
               <img class="profile-user-img img-responsive img-circle" src="<?php echo base_url(); ?>assets/img/img-user/<?php if ($row->photo == NULL ) { echo "avatar.jpg"; } else { echo $row->photo; } ?>" alt="<?php echo $row->nama_lengkap ; ?>">
@@ -42,7 +42,7 @@
                 <?php echo form_open(base_url('profil/ganti_avatar'),' enctype="multipart/form-data"'); ?>
                      <input type="file" name="photo"  class="form-control"> 
                     <br>
-                     <button type="submit" class="btn btn-warning btn-block "><i class="fa fa-save"></i> Ubah Profil</button>
+                     <button type="submit" class="btn btn-success btn-block "><i class="fa fa-save"></i> Ubah Profil</button>
                 <?php echo form_close(); ?>
                 </div>
             </div>
@@ -50,7 +50,7 @@
           </div>
           <!-- /.box -->
           <!-- About Me Box -->
-          <div class="box box-warning radius">
+          <div class="box box-success radius">
             <div class="box-header with-border">
               <h3 class="box-title">Tentang</h3>
             </div>
@@ -79,7 +79,7 @@
               <li><a href="#identitas_penduduk" data-toggle="tab"><b>Identitas Kependudukan</b></a></li>
               <li><a href="#password" data-toggle="tab"><b>Ganti Password</b></a></li>
             </ul>
-            <div class="tab-content">
+            <div class="tab-content tab-success ">
                    <div class="tab-pane active" id="first">
                  <?php echo form_open(base_url('profil/update_akun'),'class="form-horizontal" '); ?>
                   <div class="form-group">

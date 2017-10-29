@@ -41,7 +41,7 @@
 								<?php endif ?>
 							</td>
 							<td class="text-center">
-								<a onclick='responsiveVoice.speak("Panggilan, Kepada, Nomor, Antrian, <?php echo terbilang($value->nomor); ?>, Silahkan, Menuju, Loket. Terima kasih ! ", "Indonesian Female");'  class="icon-button text-blue" data-toggle="tooltip" data-placement="top" title="Panggil"><i class="fa fa-hand-pointer-o"></i></a>
+								<a onclick='responsiveVoice.speak("Panggilan, Kepada, Nomor, Antrian, <?php echo terbilang($value->nomor); ?>, Silahkan, Menuju, Petugas, pelayanan, Terima kasih ! ", "Indonesian Female");'  class="icon-button text-blue" data-toggle="tooltip" data-placement="top" title="Panggil"><i class="fa fa-hand-pointer-o"></i></a>
 								
 							</td>
 

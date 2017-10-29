@@ -70,7 +70,7 @@
   background-color: #db8b0b;
 }
 .primary-tempayan .main-header li.user-header {
-  background-color: #f39c12;
+  background-color: #1BAA4D;
 }
 .primary-tempayan .content-header {
   background: transparent;
@@ -95,7 +95,7 @@
 .primary-tempayan .sidebar-menu > li.active > a {
   color: #ffffff;
   background: #1e282c;
-  border-left-color: #f39c12;
+  border-left-color: #1BAA4D;
 }
 .primary-tempayan .sidebar-menu > li > .treeview-menu {
   margin: 0 1px;

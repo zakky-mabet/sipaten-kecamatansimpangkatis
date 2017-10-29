@@ -1,7 +1,7 @@
   	<div class="row">
 	<div class="col-md-8 col-md-offset-2 col-xs-12"><?php echo $this->session->flashdata('pesan'); ?></div>
 	<div class="col-md-12">
-		<div class="box box-warning">
+		<div class="box box-success">
 			<div class="box-header with-border">
 				<div class="col-md-7">
 					<h3 class="box-title">Data Penduduk	
@@ -78,8 +78,8 @@ echo form_open(current_url(), array('method' => 'get'));
 				</div>
 				<div class="col-md-3" style="margin-top: 20px">
 				    <div class="form-group">
-                    <button type="submit" class="btn btn-warning hvr-shadow top"><i class="fa fa-filter"></i> Filter</button>
-                    <a href="<?php echo site_url('administrator/penduduk') ?>" class="btn btn-warning hvr-shadow top" style="margin-left: 10px;"><i class="fa fa-times"></i> Reset</a>
+                    <button type="submit" class="btn btn-success hvr-shadow top"><i class="fa fa-filter"></i> Filter</button>
+                    <a href="<?php echo site_url('administrator/penduduk') ?>" class="btn btn-success hvr-shadow top" style="margin-left: 10px;"><i class="fa fa-times"></i> Reset</a>
 				    </div>
 				</div>
 			</div>
@@ -101,7 +101,7 @@ echo form_close();
 echo form_open(site_url('administrator/penduduk/bulk_action'));
 ?>
 				<table class="table table-hover table-bordered col-md-12 mini-font" style="margin-top: 10px;">
-					<thead class="bg-orange">
+					<thead class="bg-green">
 						<tr>
 							<th width="30">
 							

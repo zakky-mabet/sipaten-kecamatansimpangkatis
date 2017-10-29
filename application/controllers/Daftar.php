@@ -18,7 +18,7 @@ class Daftar extends CI_Controller {
 	{
 	
 		$data = array(
-			'title' => 'Daftar - KISS - Koba District Information And Service Center - Kabupaten Bangka Tengah',
+			'title' => 'Daftar - SIMKIS - Simpangkatis District Information And Service Center - Kabupaten Bangka Tengah',
 			'crumb' => 'Daftar'  
 			);
 		$this->form_validation->set_rules('nama_lengkap', 'Nama Lengkap', 'trim|required');
@@ -52,7 +52,7 @@ class Daftar extends CI_Controller {
 	public function verifikasi()
 	{
 		$data = array(
-			'title' => 'Verifikasi Akun - KISS - Koba District Information And Service Center - Kabupaten Bangka Tengah',
+			'title' => 'Verifikasi Akun - SIMKIS - Simpangkatis District Information And Service Center - Kabupaten Bangka Tengah',
 			'crumb' => 'Verifikasi Akun'  
 			);
 	

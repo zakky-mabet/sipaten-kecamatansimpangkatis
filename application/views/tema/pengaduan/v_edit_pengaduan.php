@@ -2,7 +2,7 @@
     <div class="row">
   <div class="col-md-8 col-md-offset-2 col-xs-12"></div>
   <dov class="col-md-8 col-md-offset-2 col-xs-12">
-    <div class="box box-warning radius">
+    <div class="box box-success radius">
    
     <div class="box-header with-border ">
       <section class="content-header">

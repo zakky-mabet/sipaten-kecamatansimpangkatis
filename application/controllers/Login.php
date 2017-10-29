@@ -14,7 +14,7 @@ class Login extends CI_Controller {
 	public function index()
 	{
 		$data = array(
-			'title' => 'Login - KISS - Koba District Information And Service Center - Kabupaten Bangka Tengah',
+			'title' => 'Login - SIMKIS - Simpangkatis District Information And Service Center - Kabupaten Bangka Tengah',
 		);
         $this->form_validation->set_rules('email', 'Email', 'trim|required');
         $this->form_validation->set_rules('password', 'Password', 'trim|required');

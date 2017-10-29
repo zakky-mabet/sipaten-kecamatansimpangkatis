@@ -34,7 +34,7 @@
 	            <div class="box-footer border-radius ">
 	              <div class="row text-center">
 	              <p></p>
-	              	<p  class="text-orange"><?php echo $value->description;  ?></p>
+	              	<p  class="text-green"><?php echo $value->description;  ?></p>
 	              </div>
 	            </div>
 	           </div>  
@@ -67,7 +67,7 @@
 	            <div class="box-footer border-radius ">
 	              <div class="row text-center">
 	              <p></p>
-	              	<p  class="text-orange"><?php echo $value->description;  ?></p>
+	              	<p  class="text-green"><?php echo $value->description;  ?></p>
 	              </div>
 	            </div>
 	           </div>  

@@ -1,6 +1,6 @@
 <div <?php echo ($this->agent->is_mobile()) ? 'class="container margin-container" style="padding-top:50px;"': $browser ="style='padding-top:80px;' class='container'"; ?>>
  <div class="row col-md-8 col-md-offset-2">
-	 <div class="box box-warning radius">
+	 <div class="box box-success radius">
   <div class="box-header with-border ">
   <div class="row">
   	<section class="content-header">
@@ -67,7 +67,7 @@
    
       </div> 
   <div class="box-footer with-border">
-          <small><strong class="text-orange fa fa-info"></strong> Klik icon untuk memilih penilian !</small> <br>
+          <small><strong class="text-green fa fa-info"></strong> Klik icon untuk memilih penilian !</small> <br>
       </div>
 </div>
 </div>
