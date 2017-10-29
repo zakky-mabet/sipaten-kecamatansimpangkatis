@@ -51,6 +51,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <script src="<?php echo base_url("public/plugins/datatables/jquery.dataTables.min.js"); ?>"></script>
   <script src="<?php echo base_url("public/plugins/datatables/dataTables.bootstrap.min.js"); ?>"></script>
   <script type="text/javascript" src="<?php echo base_url("public/plugins/lightbox/ekko-lightbox.min.js") ?>"></script>
+  <script src="<?php echo base_url("public/app/kiosk/responsivevoice.js"); ?>"></script>
 
   <script type="text/javascript"> 
       var base_url   = '<?php echo site_url(); ?>';

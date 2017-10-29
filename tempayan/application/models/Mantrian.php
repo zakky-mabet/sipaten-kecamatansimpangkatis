@@ -12,12 +12,10 @@ class Mantrian extends Sipaten_model {
 
 	public function _get()
 	{
-		
 		$this->data = array(
 			'date' => date('Y-m-d'),
 			'time' => date('H:i:s'),
 			'status' => 'menunggu',
-
 		);
 
 		$this->db->insert('antrian', $this->data);
@@ -79,6 +77,23 @@ class Mantrian extends Sipaten_model {
 			$this->db->like('status', $this->input->get('status'));
 
 		$this->db->order_by('id', 'desc');
+
+		if($type == 'result')
+		{
+			return $this->db->get('antrian', $limit, $offset)->result();
+		} else {
+			return $this->db->get('antrian')->num_rows();
+		}
+	} 
+
+	public function get_today($limit = 20, $offset = 0, $type = 'result')
+	{
+		
+		$this->db->order_by('nomor', 'asc');
+
+		$this->db->where('status', 'menunggu');
+
+		$this->db->where('date', date('Y-m-d'));
 
 		if($type == 'result')
 		{

@@ -59,6 +59,33 @@ class Antrian extends Sipaten {
 		$this->template->view('antrian/vantrian', $this->data);
 	}
 
+	public function today()
+	{
+		$this->page_title->push('Antrian', 'Antrian Hari ini');
+
+		$this->breadcrumbs->unshift(2, 'Antrian ', "antrian/today");
+
+		$config = $this->template->pagination_list();
+
+		$config['base_url'] = site_url("antrian?per_page={$this->per_page}&query={$this->query}&status={$this->status}&start={$this->start}&end={$this->end}");
+
+		$config['per_page'] = $this->per_page;
+
+		$config['total_rows'] = $this->antrian->get_today(null, null, 'num');
+
+		$this->pagination->initialize($config);
+
+		$this->data = array(
+			'title' => "Daftar Antrian Hari ini", 
+			'breadcrumb' => $this->breadcrumbs->show(),
+			'page_title' => $this->page_title->show(),
+			'antrian' => $this->antrian->get_today($this->per_page, $this->page),
+			'num_antrian' => $config['total_rows']
+		);
+
+		$this->template->view('antrian/vantrian_today', $this->data);
+	}
+
 }
 
 /* End of file Antrian.php */
