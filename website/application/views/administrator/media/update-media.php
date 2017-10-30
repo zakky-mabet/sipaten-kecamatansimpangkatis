@@ -12,7 +12,7 @@ echo form_open(current_url(), array('class' => 'form-horizontal', 'enctype'=>'mu
 		
 
 	<div class="col-md-8 col-xs-12 col-md-offset-2">
-		<div class="box box-primary">
+		<div class="box box-success">
 
 			<div class="box-body" style="margin-top: 10px;">
 				

@@ -3,7 +3,7 @@
 
 
 	<div class="col-md-3 col-xs-12">
-		<div class="box box-primary">
+		<div class="box box-success">
 		<?php  
 /**
  * Open Form
@@ -25,7 +25,7 @@ echo form_open(current_url(), array('class' => 'form-horizontal', 'enctype'=>'mu
 	</div>
 
 	<div class="col-md-9 col-xs-12">
-		<div class="box box-primary form-horizontal">
+		<div class="box box-success form-horizontal">
 
 			<div class="box-body" style="margin-top: 10px;">
 				
