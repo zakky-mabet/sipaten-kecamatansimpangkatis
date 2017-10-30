@@ -1,5 +1,5 @@
 body { 
-   font-family:Arial, Helvetica, sans-serif; 
+   font-family:'Times New Roman', sans-serif;
    margin-left:3%; 
    margin-right: 3%;   
    margin-top: 3%;
@@ -16,6 +16,9 @@ h5.upper { margin: 2px; }
    height:10%; 
    font-weight:500; 
    margin-bottom: 3%;  
+}
+small {
+   font-size: 0.7em;
 }
 
 table.kop {
@@ -87,8 +90,7 @@ table.table-bordered td {
    border-color: #757572; 
 }
 
-.content { 
-   font-family:'Arial', sans-serif; 
+.content {  
    margin-top:30px;
 }
 
@@ -107,11 +109,11 @@ small.print-at {
     text-align: center;
    display: inline-block;
    text-align: center;
-   margin-bottom: 20px;
+   margin-bottom: 10px;
 }
 
 .mail-heading > h5.mail-name {
-   font-size: 13pt;
+   font-size: 1.1em;
    line-height: 1px;
    border-bottom: 1px solid black;
    padding-bottom: 13.5px;
@@ -120,22 +122,24 @@ small.print-at {
 }
 
 .mail-heading > h5.mail-number {
-   font-size: 9pt;
+   font-size: 0.9em;
    margin-top: 0px;
    display: inherit; 
+   width: auto;
 }
 
 div.mail-content,
 div.mail-footer {
-   font-size: 13px;
-   margin-top: 50px;
+   font-size: 1em;
+   margin-top: 40px;
    display: inline;
+   width: auto
 }
 
 div.mail-content > p {
    letter-spacing: 0.7px;
    word-spacing: auto;
-   line-height: 1.5em;
+   line-height: 1.3em;
    text-align: justify;
 }
 
@@ -145,8 +149,8 @@ div.mail-content > p.indent {
 
 ul > li,
 ol > li {
-   margin-top: 10px;
-   margin-bottom:10px;
+   margin-top: 8px;
+   margin-bottom:8px;
 }
 
 ul > li > p,
@@ -166,40 +170,11 @@ ul > li > table {
 /* FOOTER MAIL */
 
 div.mail-footer > table {
-   margin-top: 50px;
+   margin-top: 30px;
 }
 
 
-
-        .wrapper {
-            background-image: url(<?php echo base_url("assets/img/logo_watermark.png"); ?>);
-            background-repeat: no-repeat;
-           /*  background-attachment: fixed; */
-            background-position: center; 
-            page-break-inside: avoid;
-            min-height: 1130px;
-        }
-         @media all {
-         .watermark {
-         display: none;
-         background-image: url(<?php echo base_url("assets/img/logo_kop.png"); ?>);
-         float: right;
-         }
-         .pagebreak {
-         display: none;
-         }
-         }
-         @media print {
-         .watermark {
-         display: block;
-         }
-         .pagebreak {
-            display: block;
-            page-break-after: always;
-         }
-         }
-        /*  @page { size: 'A4'; } */
-         @media print {
-         table {page-break-inside: avoid;}
-         div.wrapper {page-break-inside: avoid;}
-         }
+.push {
+    margin-top: 50px; /* .push must be the same height as .footer */
+    text-align: center;
+}

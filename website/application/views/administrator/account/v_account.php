@@ -12,7 +12,7 @@ echo form_open(current_url(), array('class' => 'form-horizontal', 'enctype'=>'mu
 
 
 	<div class="col-md-10 col-md-offset-1 col-xs-12">
-		<div class="box box-primary form-horizontal">
+		<div class="box box-success form-horizontal">
 
 			<div class="box-body" style="margin-top: 10px;">
 				
@@ -67,7 +67,7 @@ echo form_open(current_url(), array('class' => 'form-horizontal', 'enctype'=>'mu
 				<div class="form-group">
 					<label for="email" class="control-label col-md-3 col-xs-12">Alamat : <strong class="text-red">*</strong></label>
 					<div class="col-md-8">
-					  <textarea name="alamat"  placeholder="Ex : Jln. Raya Koba No. 141 RT. 05 Kel. Koba Kecamatan Koba Kabupaten Bangka Tengah" class="form-control"><?php echo $get->alamat;?></textarea>
+					  <textarea name="alamat"  placeholder="Ex : Jln. Raya Simpang Katis No. 141 RT. 05 Kel. Simpang Katis Kecamatan Simpang Katis Kabupaten Bangka Tengah" class="form-control"><?php echo $get->alamat;?></textarea>
 		              <span class="help-block"><?php echo form_error('alamat', '<small class="text-red">', '</small>'); ?></span>
 					</div>
 				</div>

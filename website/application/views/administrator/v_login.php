@@ -23,7 +23,7 @@
          }
          input.form-control { border-radius: 5px; font-size: 1.1em; }
          div.login-box-body { border-radius: 10px;  }
-         span.form-control-feedback { background-color: #FC9631; color: white; }
+         span.form-control-feedback { background-color: #74BF58; color: white; }
          div.has-feedback > span {  top: 0; left: 0; border-radius: 6px 0px 0px 6px;}
          .padd { padding-left: 40px; }
          .arrow-up {
@@ -34,16 +34,16 @@
          border-right: 10px solid transparent;
          border-bottom: 10px solid white;
          }
-         button.btn-login { border-radius: 5px; font-weight:bold; background-color:#FC9631; color: white }
+         button.btn-login { border-radius: 5px; font-weight:bold; background-color:#74BF58; color: white }
          button.btn-login:hover  { background-color: #EF933E; color: white }
          button.btn-login:focus, button.btn-login:active  { 
          color: white;
          }
          .login-logo { margin-bottom:10px; }
-         .lockscreen-footer { font-family: 'Arial', sans-serif; color:#FC9631; }
+         .lockscreen-footer { font-family: 'Arial', sans-serif; color:#74BF58; }
          span.blue-sipaten { color: #0093DD; }
          .text-red { color: red; }
-         .captcha > p { font-size:30px; font-family: 'Arial Narrow'; font-weight: bold; text-align: center; letter-spacing: 30px; color: #FC9631;  }
+         .captcha > p { font-size:30px; font-family: 'Arial Narrow'; font-weight: bold; text-align: center; letter-spacing: 30px; color: #74BF58;  }
       </style>
    </head>
    <body class="login-page">

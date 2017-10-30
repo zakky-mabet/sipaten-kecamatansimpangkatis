@@ -17,20 +17,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets') ?>/css/style.css" media="screen">
   <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets') ?>/css/responsive.css" media="screen">
   <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets') ?>/css/animate.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets') ?>/css/colors/orange.css" title="orange" media="screen" />
-  <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets') ?>/css/colors/red.css" title="red" media="screen" />
-  <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets') ?>/css/colors/jade.css" title="jade" media="screen" />
-  <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets') ?>/css/colors/blue.css" title="blue" media="screen" />
-  <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets') ?>/css/colors/beige.css" title="beige" media="screen" />
-  <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets') ?>/css/colors/cyan.css" title="cyan" media="screen" />
   <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets') ?>/css/colors/green.css" title="green" media="screen" />
-  <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets') ?>/css/colors/peach.css" title="peach" media="screen" />
-  <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets') ?>/css/colors/pink.css" title="pink" media="screen" />
-  <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets') ?>/css/colors/purple.css" title="purple" media="screen" />
-  <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets') ?>/css/colors/sky-blue.css" title="sky-blue" media="screen" />
-  <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets') ?>/css/colors/yellow.css" title="yellow" media="screen" />
-
-
   <script type="text/javascript" src="<?php echo base_url('assets') ?>/js/jquery-2.1.4.min.js"></script>
   <script type="text/javascript" src="<?php echo base_url('assets') ?>/js/jquery.migrate.js"></script>
   <script type="text/javascript" src="<?php echo base_url('assets') ?>/js/modernizrr.js"></script>

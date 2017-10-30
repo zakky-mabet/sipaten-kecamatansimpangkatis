@@ -1,7 +1,7 @@
   	<div class="row">
 	<div class="col-md-8 col-md-offset-2 col-xs-12"><?php echo $this->session->flashdata('alert'); ?></div>
 	<div class="col-md-12">
-		<div class="box box-warning">
+		<div class="box box-success">
 			<div class="box-header">
 			
 			</div>
@@ -52,14 +52,14 @@ echo form_open(current_url(), array('method' => 'get'));
 
 				<div class="col-md-3">
 				    <div class="form-group pull">
-                    <button type="submit" class="btn btn-warning hvr-shadow top"><i class="fa fa-filter"></i> Filter</button>
-                    <a href="<?php echo site_url('administrator/kategori_berita') ?>" class="btn btn-warning hvr-shadow top" style="margin-left: 10px;"><i class="fa fa-times"></i> Reset</a>
+                    <button type="submit" class="btn btn-success hvr-shadow top"><i class="fa fa-filter"></i> Filter</button>
+                    <a href="<?php echo site_url('administrator/kategori_berita') ?>" class="btn btn-success hvr-shadow top" style="margin-left: 10px;"><i class="fa fa-times"></i> Reset</a>
 				    </div>
 				</div>
 
 				
 				<div class="col-md-3 top">
-					  <a href="<?php echo site_url('administrator/kategori_berita/create') ?>" class="btn btn-warning hvr-shadow" style="margin-left: 10px;"><i class="fa fa-plus"></i> Tambah Baru</a>
+					  <a href="<?php echo site_url('administrator/kategori_berita/create') ?>" class="btn btn-success hvr-shadow" style="margin-left: 10px;"><i class="fa fa-plus"></i> Tambah Baru</a>
 				</div>
 
 			</div>
@@ -82,7 +82,7 @@ echo form_close();
 echo form_open(site_url('administrator/kategori_berita/bulk_action'));
 ?>
 				<table class="table table-hover table-bordered col-md-12 mini-font" style="margin-top: 10px;">
-					<thead class="bg-orange">
+					<thead class="bg-green">
 						<tr>
 							<th width="30">
 							
@@ -104,10 +104,10 @@ echo form_open(site_url('administrator/kategori_berita/bulk_action'));
 					<tr>
               			<th colspan="7" class="text-center">
               			<div class='col-md-4 col-md-offset-4'><br>
-              			<div class='alert alert-warning animated bounce'>
+              			<div class='alert alert-success animated bounce'>
               				<button type='button' class='close' data-dismiss='alert' style='text-align:justify;'>
               				<i class='ace-icon fa fa-times'></i></button>
-              			<strong><i class='ace-icon fa fa-warning'></i> Maaf !</strong> Data Tidak ditemukan</div>
+              			<strong><i class='ace-icon fa fa-success'></i> Maaf !</strong> Data Tidak ditemukan</div>
               			</div>
               			</th>
             		</tr>

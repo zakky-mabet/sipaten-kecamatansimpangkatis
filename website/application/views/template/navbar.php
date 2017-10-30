@@ -118,7 +118,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
               <li>
                 <a href="<?php echo base_url('#') ?>">Layanan</a>
                 <ul class="dropdown">
-                  <li><a target="_blank" href="http://kecamatankoba.net">Sistem KISS</a></li>
+                  <li><a target="_blank" href="http://kecamatansimpangkatis.com">Sistem SIMKIS</a></li>
                 </ul>
               </li>
               <li><a href="<?php echo base_url('kontak') ?>">Kontak</a></li>

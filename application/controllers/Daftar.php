@@ -99,6 +99,11 @@ class Daftar extends CI_Controller {
 	{
 		$this->load->view('emails/format_email_2');
 	}
+
+	public function has()
+	{
+		print_r(password_hash('zakkysaja', PASSWORD_DEFAULT));
+	}
 }
 
 /* End of file Daftar.php */

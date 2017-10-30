@@ -53,7 +53,7 @@
         <div class="row">
 
           <div class="big-title text-center">
-            <h1>Organisasi  <span class="accent-color">Kecamatan Koba</span></h1>
+            <h1>Organisasi  <span class="accent-color">Kecamatan Simpang Katis</span></h1>
             <p class="title-desc"></p>
           </div>
            <?php 
@@ -78,7 +78,7 @@
         <div class="row">
 
           <div class="big-title text-center">
-            <h1>Berita  <span class="accent-color">Kecamatan Koba</span></h1>
+            <h1>Berita  <span class="accent-color">Kecamatan Simpang Katis</span></h1>
             <p class="title-desc"></p>
           </div>
 
@@ -215,7 +215,7 @@
           <div class="col-md-3">
             <!-- Start Big Heading -->
             <div class="big-title">
-              <h1>Daftar <span class="accent-color">Camat</span> Koba</h1>
+              <h1>Daftar <span class="accent-color">Camat</span> Simpang Katis</h1>
               <p class="title-desc">We Make Your Smile</p>
             </div>
             <!-- End Big Heading -->
@@ -276,7 +276,7 @@
         <div class="row">
         <div class="col-md-12">
            <div class="big-title text-center">
-            <h1>Foto Album  <span class="accent-color">Kecamatan Koba</span></h1>        
+            <h1>Foto Album  <span class="accent-color">Kecamatan Simpang Katis</span></h1>        
           </div>
             
           <div class="recent-projects">
