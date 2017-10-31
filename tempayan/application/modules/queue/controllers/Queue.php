@@ -34,6 +34,39 @@ class Queue extends CI_Controller
 		redirect("queue");
 	}
 
+	public function get_print($id)
+	{
+		if (!$id) {
+			redirect('404');
+		}
+		$this->data = array(
+			'title' => "Print Customer Queue",
+			'print' => $this->mantrian->get_print($id),
+		);	
+
+		;
+		/* contoh text */  
+		$text = 'Eh, ini adalah testing aplikasi cetak teks langsung ke printer dengan PHP lhoo....';     
+		/* tulis dan buka koneksi ke printer */    
+		$printer = printer_open("POS-58");  
+		/* write the text to the print job */  
+		  
+		/* close the connection */ 
+		printer_close($printer);
+
+		//redirect(base_url('queue'));
+	}
+
+	public function up($id)
+	{
+		$this->data = array(
+			'title' => "Print Customer Queue",
+			'print' => $this->mantrian->get_print($id),
+		);
+		$printer = printer_open("POS-58");  	
+		printer_write($printer, $this->load->view('vprint', $this->data)); 
+		printer_close($printer);
+	}
 	
 }
 

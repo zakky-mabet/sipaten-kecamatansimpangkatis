@@ -38,6 +38,8 @@ class Mantrian extends Sipaten_model {
 			array('type' => 'danger','icon' => 'check')
 			);
 		}
+
+		redirect(base_url('queue/get_print/'.$id));
 	}
 
 	public function count()
@@ -45,9 +47,19 @@ class Mantrian extends Sipaten_model {
 		return $this->db->get_where('antrian', array('date' => date('Y-m-d') ))->result();
 	}
 
+	public function count_sisa()
+	{
+		return $this->db->get_where('antrian', array('date' => date('Y-m-d'), 'status'=>'menunggu' ))->result();
+	}
+
 	public function get_id($id)
 	{
 		return $this->db->get_where('antrian', array('id' => $id));
+	}
+
+	public function get_print($id = 0)
+	{
+		return $this->db->get_where('antrian', array('id' => $id))->row();
 	}
 
 	public function update_nomor($id)
@@ -86,7 +98,7 @@ class Mantrian extends Sipaten_model {
 		}
 	} 
 
-	public function get_today($limit = 20, $offset = 0, $type = 'result')
+	public function get_today($limit = 12, $offset = 0, $type = 'result')
 	{
 		
 		$this->db->order_by('nomor', 'asc');
@@ -103,7 +115,40 @@ class Mantrian extends Sipaten_model {
 		}
 	} 
 
-	
+	public function update_petugas($id = 0)
+	{
+		$object = array(
+			'admin' => $this->session->userdata('ID'),
+		);
+		$this->db->update('antrian', $object, array('id' => $id));
+	}
+
+	public function selesai($id = 0)
+	{
+		$object = array(
+			'status' => 'selesai',
+			'end_time' => date('Y-m-d H:i:s')
+		);
+		$this->db->update('antrian', $object, array('id' => $id));
+
+		if($this->db->affected_rows())
+		{
+			$this->template->alert_no_close(
+			'Pelayanan Antrian Selesai !', 
+			array('type' => 'success','icon' => 'check')
+			);
+		} else {
+			$this->template->alert_no_close(
+			'Silahkan coba lagi !', 
+			array('type' => 'danger','icon' => 'check')
+			);
+		}
+	}
+
+	public function get_user($param = 0)
+	{
+		return $this->db->get_where('users', array('user_id' => $param))->row();
+	}
 
 }
 

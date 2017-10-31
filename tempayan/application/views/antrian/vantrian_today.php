@@ -1,71 +1,74 @@
 <div class="row">
 	<div class="col-md-8 col-md-offset-2 col-xs-12"><?php echo $this->session->flashdata('alert'); ?></div>
 	<div class="col-md-12 ">
-		<div class="box box-primary">
-			<div class="box-header with-border">
-				<div class="col-md-7">
-					<h3 class="box-title">Data Daftar Antrian Hari ini</h3>
-				</div>
+		
+		
+		<?php if (!$antrian): ?>
+
+			<div class="col-md-8 col-md-offset-2 col-xs-12">
+				<div class="callout callout-success">
+			        <h4><i class="fa fa-info-circle"></i> Info !</h4>
+			       	Belum ada Antrian !
+			     </div>			
 			</div>
-			<div class="box-body">
 
-				<table class="table table-hover table-bordered col-md-10" style="margin-top: 10px;">
-					<thead class="bg-silver">
-						<tr>
-							<th width="50" class="text-center">No</th>
-							<th class="text-center">No Antrian</th>
-							<th class="text-center">Tanggal</th>
-							<th class="text-center">Status</th>
-							<th class="text-center">Kelola</th>
-						</tr>
-					</thead>
-					<tbody>
+		<?php else: ?>
+		
+		<?php
 
-					<?php
+		$number = ( ! $this->page ) ? 0 : $this->page;
 
-					$number = ( ! $this->page ) ? 0 : $this->page;
+		foreach ($antrian as $key => $value): ?> 
 
-					foreach ($antrian as $key => $value): ?>
-						
-						<tr>
-							<td class="text-center"><?php echo ++$number ?></td>
-							<td class="text-center"><?php echo $value->nomor ?></td>
-							<td class="text-center"><?php echo date_id($value->date) ?></td>
-							<td class="text-center">
-								<?php if ($value->status == 'menunggu'): ?>
-									<span class="label label-warning ">Menunggu</span>
-								<?php elseif ($value->status == 'selesai'): ?>
-									<span class="label label-success">Selesai</span>
-								<?php elseif ($value->status == 'tidakdiketahui'): ?>
-									<span class="label label-danger">Tidak Diketahui</span>
-								<?php endif ?>
-							</td>
-							<td class="text-center">
-								<a onclick='responsiveVoice.speak("Panggilan, Kepada, Nomor, Antrian, <?php echo terbilang($value->nomor); ?>, Silahkan, Menuju, Petugas, pelayanan, Terima kasih ! ", "Indonesian Female");'  class="icon-button text-blue" data-toggle="tooltip" data-placement="top" title="Panggil"><i class="fa fa-hand-pointer-o"></i></a>
-								
-							</td>
+		<div class="col-md-3 ">
+			<div class="box box-primary">
+	            <div class="box-body box-profile">
+				
 
-						</tr>
-					<?php endforeach ?>
-						
-					</tbody>
-					<tfoot>
-						<?php 
-						echo "<tr>
-							<th colspan='4'>
-							<small class=''>".count($antrian) . " dari " . $num_antrian . " data"."</small>
-							<th>
-						</tr>"; ?>
-					</tfoot>
+	              <h1 class="profile-username text-center" style="font-size:7em; font-weight: 600; color: green"><?php echo $value->nomor ?></h1>
 
-				</table>
+	              <ul class="list-group list-group-unbordered">
+	                <li class="list-group-item">
+	                  <b>Sisa Antrian</b> <a class="pull-right"><?php echo count($count_sisa); ?></a>
+	                </li>
+	                <li class="list-group-item">
+	                  <b>Total Antrian</b> <a class="pull-right"><?php echo count($count); ?></a>
+	                </li>
 
+	                <li class="list-group-item">
+	                  <b>Jam</b> <a class="pull-right"><?php echo $value->time ?></a>
+	                </li>
+	                <li class="list-group-item">
+	                  <b>Status</b> <a class="pull-right">
+	                  	<?php if ($value->status == 'menunggu' AND $value->admin == NULL): ?>
+							<span class="label label-warning ">Menunggu Panggilan</span>
 
-			</div>
-			<div class="box-footer text-center">
-				<?php echo $this->pagination->create_links(); ?>
-			</div>
-		</div>
+						<?php elseif ($value->status == 'menunggu' AND $value->admin != NULL): ?>
+							<span class="label label-info">Dalam Pelayanan <?php echo $this->antrian->get_user($value->admin)->name ?></span>
+						<?php endif ?></a>
+	                </li>
+	              </ul>
+	             <?php if ( $value->status == 'menunggu' AND $value->admin == $this->session->userdata('ID')): ?>
+	             	<a  onclick='responsiveVoice.speak("Panggilan, Kepada, Nomor, Antrian, <?php echo terbilang($value->nomor); ?>, Silahkan, Menuju, Petugas, pelayanan, <?php echo $this->antrian->get_user($this->session->userdata('ID'))->name ?>, Terima kasih ! ", "Indonesian Female");' href="#" class="btn  btn-success btn-block "><i class="fa fa-microphone"></i> <b>Panggil</b></a>
+
+	              <a href="<?php echo base_url('antrian/selesai/'.$value->id) ?>" class="btn btn-warning btn-block"><i class="fa fa-sign-out"></i> <b>Selesai</b></a>
+
+	              <?php elseif ($value->status == 'menunggu' AND $value->admin == NULL): ?>
+						<a  href="<?php echo base_url('antrian/update_petugas/'.$value->id) ?>" class="btn  btn-success btn-block "><i class="fa fa-sign-in"></i> <b>Ambil</b></a>
+						 <a href="#" class="btn btn-warning btn-block"><i class="fa fa-sign-out"></i> <b>Selesai</b></a>
+	             <?php endif ?>
+	              
+
+	            </div>
+	          </div>
+	        </div>
+
+	        <?php endforeach ?>
+			<?php endif ?>
+		
+		
+		<div class="col-md-8 col-md-offset-2 col-xs-12"><?php echo $this->pagination->create_links(); ?></div>
+
 	</div>
 </div>
 

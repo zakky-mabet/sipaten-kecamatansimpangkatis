@@ -67,7 +67,7 @@ class Antrian extends Sipaten {
 
 		$config = $this->template->pagination_list();
 
-		$config['base_url'] = site_url("antrian?per_page={$this->per_page}&query={$this->query}&status={$this->status}&start={$this->start}&end={$this->end}");
+		$config['base_url'] = site_url("antrian/today?per_page={$this->per_page}&query={$this->query}&status={$this->status}&start={$this->start}&end={$this->end}");
 
 		$config['per_page'] = $this->per_page;
 
@@ -80,10 +80,26 @@ class Antrian extends Sipaten {
 			'breadcrumb' => $this->breadcrumbs->show(),
 			'page_title' => $this->page_title->show(),
 			'antrian' => $this->antrian->get_today($this->per_page, $this->page),
-			'num_antrian' => $config['total_rows']
+			'num_antrian' => $config['total_rows'],
+			'count' => $this->antrian->count(),
+			'count_sisa' => $this->antrian->count_sisa()
 		);
 
 		$this->template->view('antrian/vantrian_today', $this->data);
+	}
+
+	public function update_petugas($id = 0)
+	{
+		$this->antrian->update_petugas($id);
+
+		redirect('antrian/today');
+	}
+
+	public function selesai($id = 0)
+	{
+		$this->antrian->selesai($id);
+
+		redirect('antrian/today');
 	}
 
 }

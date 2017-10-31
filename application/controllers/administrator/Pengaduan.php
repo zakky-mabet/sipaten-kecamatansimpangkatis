@@ -94,7 +94,6 @@ class Pengaduan extends CI_Controller
     {
         $this->pengaduan->update($param);
         
-        
         redirect("administrator/pengaduan/get/{$param}");
     }
 
