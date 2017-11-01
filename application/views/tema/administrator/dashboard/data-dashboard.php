@@ -95,7 +95,7 @@ Highcharts.chart('surat-keluar', {
         type: 'areaspline',
         polar:true
     },
-    colors: ['#ff9800'],
+    colors: ['#14A948'],
     title: {
         text: 'Grafik Pengaduan Masuk'
     },

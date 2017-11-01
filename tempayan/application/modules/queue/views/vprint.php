@@ -91,7 +91,7 @@
 
         </style>
     </head>
-    <body >
+    <body onload="">
         <div class="content">
             <div class="title">
                 Nomor Antrian Pelayanan <br> Kecamatan Simpang Katis        

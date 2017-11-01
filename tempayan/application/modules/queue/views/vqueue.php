@@ -48,7 +48,7 @@
 					<p style="font-size: 1.6em; font-family:'Viga',sans-serif; font-weight: 600; color:white ">Ambil Antrian</p>
 		        </button>
 		       </a>
-
+			
 	  		</div>
 	  	</div>
 	</div>
