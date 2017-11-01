@@ -13,7 +13,7 @@ class Create_surat extends Sipaten
 
 		$this->load->model('mcreate_surat', 'create_surat');
 
-		$this->load->library(array('cart'));
+		$this->load->library(array('cart','firebase_push'));
 
 		$this->now_date = date('Y-m-d');
 
@@ -143,9 +143,16 @@ class Create_surat extends Sipaten
 
 		if($this->form_validation->run() == TRUE)
 		{
-			$this->create_surat->update_surat($penduduk->nik, $param);
+			$IDSuratBaru = $this->create_surat->update_surat($penduduk->nik, $param);
 
 			parent::create_surat_notification(base_url('surat_keluar'), $this->input->post('pemeriksa'));
+
+			/* KIRIM Notifikasi ke android */
+			$this->firebase_push->setTitle("Pengajuan Surat Baru!")
+								->setMessage("Anda memiliki 1 dokumen dari ".$this->session->userdata('account')->name." untuk diperiksa.")
+								->setID($IDSuratBaru)
+								->setTo($this->option->get_firebase_token($this->input->post('pemeriksa')))
+								->send();
 
 			$this->cart->destroy();
 			
