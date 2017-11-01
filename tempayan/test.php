@@ -54,8 +54,7 @@ echo $result;
 
 
 
-<!-- 
-package id.go.bangkatengahkab.simpangkatis.tempayan.models;
+<!-- package id.go.bangkatengahkab.simpangkatis.tempayan.models;
 
 import android.content.Context;
 import android.content.Intent;
