@@ -48,6 +48,11 @@ class Option extends Sipaten_model
 			return false;
 		}
 	}
+
+	public function get_firebase_token($param = 0)
+	{
+		return $this->db->query("SELECT firebase_token FROM users WHERE user_id = ?", array($param))->row('firebase_token');
+	}
 }
 
 /* End of file Option.php */

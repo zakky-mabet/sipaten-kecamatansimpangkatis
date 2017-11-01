@@ -35,7 +35,16 @@ class Main extends Sipaten
 
 	public function test()
 	{
-		echo $this->permission->is_groups(array('statistik_penduduk', 'statistik_surat_non_perizinan','statistik_surat_perizinan','statistik_pelayanan'));
+		$this->load->library('firebase_push');
+			
+			$this->firebase_push->setTitle("Pengajuan Surat Baru!")
+								->setMessage("Anda memiliki 1 dokumen dari ".$this->session->userdata('account')->name." untuk diperiksa.")
+								->setID(1)
+								->setTo("fpsK907dQ3E:APA91bE3uXBysbCuDDYYx6d3NKqD72jhzr-A_TlI6_qDCHRMqhZHbmN2_Qabq80bhlHU5hN0jbMj0j-oyj-x0StkWdtCRN268PBQVUYZfhEOKXOu8NAO0YBigMXNXBR9foh9-prmAkl3");
+
+		echo "<pre>";
+		print_r ($this->firebase_push->send());
+		echo "</pre>";;
 	}
 
 

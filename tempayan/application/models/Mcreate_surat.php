@@ -171,6 +171,8 @@ class Mcreate_surat extends Sipaten_model
 			);
 
 			$this->db->insert('surat', $surat);
+
+			return $this->db->insert_id();
 		}
 	}
 
