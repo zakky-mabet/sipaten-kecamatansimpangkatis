@@ -23,7 +23,7 @@ class Epengaduan extends CI_Controller {
     public function index()
     {
         $data = array(
-            'title' => 'E-pengaduan - SIMKIS Simpangkatis District Information And Service Center - Kecamatan Simpangkatis - Kabupaten Bangka Tengah',
+            'title' => 'E-pengaduan - PAKISS Simpang Katis Informations And Services - Kecamatan Simpang Katis - Kabupaten Bangka Tengah',
             'crumb' => 'E-pengaduan'  
             );
         $this->template->view('pengaduan/v_pengaduan', $data);
@@ -31,7 +31,7 @@ class Epengaduan extends CI_Controller {
     public function create()
     {
         $data = array(
-            'title' => 'Buat Pengaduan - Epengaduan - SIMKIS Simpangkatis District Information And Service Center - Kecamatan Simpangkatis - Kabupaten Bangka Tengah',
+            'title' => 'Buat Pengaduan - Epengaduan - PAKISS Simpang Katis Informations And Services - Kecamatan Simpang Katis - Kabupaten Bangka Tengah',
             'crumb' => 'Buat Pengaduan'  
             );
         $this->form_validation->set_rules('judul', 'Judul', 'trim|required|min_length[5]');
@@ -119,7 +119,7 @@ class Epengaduan extends CI_Controller {
      public function histori()
     {
         $data = array(
-            'title' => 'Riwayat Pengaduan- SIMKIS Simpangkatis District Information And Service Center - Kecamatan Simpangkatis - Kabupaten Bangka Tengah',
+            'title' => 'Riwayat Pengaduan- PAKISS Simpang Katis Informations And Services - Kecamatan Simpang Katis - Kabupaten Bangka Tengah',
             'crumb' => 'Riwayat Pengaduan',
             'histori' => $this->m_epengaduan->get_histori(),   
             );
@@ -130,7 +130,7 @@ class Epengaduan extends CI_Controller {
     public function ubah_status()
     {
         $data = array(
-            'title' => 'Histori - SIMKIS Simpangkatis District Information And Service Center - Kecamatan Simpangkatis - Kabupaten Bangka Tengah',
+            'title' => 'Histori - PAKISS Simpang Katis Informations And Services - Kecamatan Simpang Katis - Kabupaten Bangka Tengah',
             'crumb' => 'Histori Pengaduan',
             'histori' => $this->m_epengaduan->get_histori(),   
             );
@@ -163,7 +163,7 @@ class Epengaduan extends CI_Controller {
           show_404();
 
         $data = array(
-            'title' => 'Detail pengaduan - SIMKIS Simpangkatis District Information And Service Center - Kecamatan Simpangkatis - Kabupaten Bangka Tengah',
+            'title' => 'Detail pengaduan - PAKISS Simpang Katis Informations And Services - Kecamatan Simpang Katis - Kabupaten Bangka Tengah',
             'crumb' => 'Detail pengaduan',
             'detail_aduan' => $this->m_epengaduan->get_detail($ID), 
             );
@@ -178,7 +178,7 @@ class Epengaduan extends CI_Controller {
         $rowcek = $query->row();
         if ($rowcek->status_pesan == 'no') {      
         $data = array(
-            'title' => 'Edit pengaduan - SIMKIS Simpangkatis District Information And Service Center - Kecamatan Simpangkatis - Kabupaten Bangka Tengah',
+            'title' => 'Edit pengaduan - PAKISS Simpang Katis Informations And Services - Kecamatan Simpang Katis - Kabupaten Bangka Tengah',
             'crumb' => 'Edit pengaduan',
             'edit_pengaduan' => $this->m_epengaduan->get_detail($ID), 
             );
@@ -282,7 +282,7 @@ class Epengaduan extends CI_Controller {
   public function panduan()
   {
             $data = array(
-            'title' => 'Panduan Pengaduan - SIMKIS Simpangkatis District Information And Service Center - Kecamatan Simpangkatis - Kabupaten Bangka Tengah',
+            'title' => 'Panduan Pengaduan - PAKISS Simpang Katis Informations And Services - Kecamatan Simpang Katis - Kabupaten Bangka Tengah',
             'crumb' => 'Panduan Pengaduan',
             'panduan' => $this->m_epengaduan->get_panduan(), 
             );
@@ -298,7 +298,7 @@ class Epengaduan extends CI_Controller {
              $this->db->where($array);
              $query = $this->db->get('panduan_pengaduan');
              $data = array(
-                'title' => 'Detail Panduan Pengaduan - SIMKIS Simpangkatis District Information And Service Center - Kecamatan Simpangkatis - Kabupaten Bangka Tengah',
+                'title' => 'Detail Panduan Pengaduan - PAKISS Simpang Katis Informations And Services - Kecamatan Simpang Katis - Kabupaten Bangka Tengah',
                 'crumb' => 'Detail Panduan Pengaduan',
                 'panduan' => $this->m_epengaduan->get_panduan_read($slug), 
             );

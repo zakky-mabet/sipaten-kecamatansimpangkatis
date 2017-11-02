@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>
-    <?php echo (isset($data['title']) ? $data['title']." - SIMKIS Simpangkatis District Information And Service Center" : "SIMKIS - Kecamatan Simpangkatis Kabupaten Bangka Tengah") ?>
+    <?php echo (isset($data['title']) ? $data['title']." - PAKISS Simpang Katis Informations And Services " : "PAKISS - Kecamatan Simpang Katis Kabupaten Bangka Tengah") ?>
   </title>
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <link rel="icon" type="png/jpg" href="<?php echo base_url() ?>assets/img/favicon-title.png">
@@ -223,7 +223,7 @@
       <b>Versi</b>  1.0.0 (Pre Release)
     </div>
     <small>
-      Hak Cipta &copy; 2017 <?php if(date('Y')!=2017) echo "- ".date('Y'); ?> Kec. Simpangkatis, Kab. Simpangkatis All rights reserved. Develop By <a href="http://teitramega.co.id" target="_blank">Teitra Mega</a>.
+      Hak Cipta &copy; 2017 <?php if(date('Y')!=2017) echo "- ".date('Y'); ?> Kec. Simpang Katis, Kab. Simpang Katis All rights reserved. Develop By <a href="http://teitramega.co.id" target="_blank">Teitra Mega</a>.
     <small>
   </footer>
 

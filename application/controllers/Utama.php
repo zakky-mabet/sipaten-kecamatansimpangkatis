@@ -15,7 +15,7 @@ class Utama extends CI_Controller {
 	public function index()
 	{
 		$data = array(
-			'title' => 'Portal - SIMKIS - Simpangkatis District Information And Service Center - Kabupaten Bangka Tengah',
+			'title' => 'Portal - PAKISS - Simpang Katis Informations And Services - Kabupaten Bangka Tengah',
 			'crumb' => 'Portal'  
 			);
 		$this->templateportal->view('main/portal', $data);

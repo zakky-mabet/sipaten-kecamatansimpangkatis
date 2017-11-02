@@ -1,6 +1,6 @@
 <div <?php echo ($this->agent->is_mobile()) ? 'class="container margin-container" style="padding-top:50px;"' : $browser ="style='padding-top:80px;' class='container'" ; ?>>
  <div class="row">
-	 <div class="box box-warning radius">
+	 <div class="box box-success radius">
   <div class="box-header with-border ">
   <div class="row">
   	<section class="content-header">
@@ -27,14 +27,14 @@
 				  		foreach ($panduan as $value) {
 				  	 ?>
 				    <li>
-				        <i class="fa fa-book bg-orange"></i>
+				        <i class="fa fa-book bg-green"></i>
 				        <div class="timeline-item">
 				            <h3 class="timeline-header"><b><?php echo $value->judul; ?></b></h3>
 				            <div class="timeline-body ">
 				            <?php echo $value->deskripsi_lengkap; ?>
 				            </div>
 				         	 <div class="timeline-footer ">
-				                <a href="<?php echo site_url('epenilaian/panduan'); ?>" class="btn btn-warning btn-xs">Kembali</a>
+				                <a href="<?php echo site_url('epenilaian/panduan'); ?>" class="btn btn-success btn-xs">Kembali</a>
 				            </div>
 				        </div>
 				    </li>

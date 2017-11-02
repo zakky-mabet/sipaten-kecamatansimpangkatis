@@ -34,7 +34,7 @@ class Antrian extends Sipaten {
 
 	public function index()
 	{
-		$this->page_title->push('Antrian', 'Daftar Antrian');
+		$this->page_title->push('Antrian', 'Rekap Antrian');
 
 		$this->breadcrumbs->unshift(2, 'Antrian ', "antrian");
 
@@ -49,7 +49,7 @@ class Antrian extends Sipaten {
 		$this->pagination->initialize($config);
 
 		$this->data = array(
-			'title' => "Daftar Antrian", 
+			'title' => "Rekap Antrian", 
 			'breadcrumb' => $this->breadcrumbs->show(),
 			'page_title' => $this->page_title->show(),
 			'antrian' => $this->antrian->get_all($this->per_page, $this->page),

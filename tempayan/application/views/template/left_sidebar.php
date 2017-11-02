@@ -18,11 +18,25 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                <i class="fa fa-dashboard"></i> <span>Dashboard</span>
             </a>
         </li>
-        <li class="<?php echo active_link_controller('antrian'); ?>">
-            <a href="<?php echo site_url('antrian') ?>">
+
+        <li class="treeview <?php echo active_link_multiple(array('antrian')); ?>">
+            <a href="#">
                <i class="fa fa-users"></i> <span>Antrian</span>
+               <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+               </span>
             </a>
+          <ul class="treeview-menu">
+             <li class="<?php echo active_link_method('index','antrian') ?>">
+              <a href="<?php echo site_url('antrian') ?>"><i class="fa fa-angle-double-right"></i> Rekap Antrian</a>
+            </li>
+            <li class="<?php echo active_link_method('today','antrian') ?>">
+              <a href="<?php echo site_url('antrian/today') ?>"><i class="fa fa-angle-double-right"></i> Antrian Hari Ini</a>
+            </li>
+           
+          </ul>
         </li>
+      
 <?php  
 /* PERMISSION */
 if( $this->permission->is_true('surat_perizinan', 'on') ) :
@@ -47,6 +61,7 @@ if( $this->permission->is_true('surat_perizinan', 'on') ) :
               <a href="<?php echo site_url("create_surat/index/{$row->id_surat}?from=".current_url()) ?>">
                 <i class="fa fa-angle-double-right"></i> <?php echo $row->nama_kategori; ?>
               </a>
+
             </li>
       <?php  
       endforeach;

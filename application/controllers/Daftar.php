@@ -18,7 +18,7 @@ class Daftar extends CI_Controller {
 	{
 	
 		$data = array(
-			'title' => 'Daftar - SIMKIS - Simpangkatis District Information And Service Center - Kabupaten Bangka Tengah',
+			'title' => 'Daftar - PAKISS - Simpang Katis Informations And Service  - Kabupaten Bangka Tengah',
 			'crumb' => 'Daftar'  
 			);
 		$this->form_validation->set_rules('nama_lengkap', 'Nama Lengkap', 'trim|required');
@@ -52,7 +52,7 @@ class Daftar extends CI_Controller {
 	public function verifikasi()
 	{
 		$data = array(
-			'title' => 'Verifikasi Akun - SIMKIS - Simpangkatis District Information And Service Center - Kabupaten Bangka Tengah',
+			'title' => 'Verifikasi Akun - PAKISS - Simpang Katis Informations And Services  - Kabupaten Bangka Tengah',
 			'crumb' => 'Verifikasi Akun'  
 			);
 	
@@ -102,7 +102,12 @@ class Daftar extends CI_Controller {
 
 	public function has()
 	{
-		print_r(password_hash('zakkysaja', PASSWORD_DEFAULT));
+		print_r(password_hash('admin', PASSWORD_DEFAULT));
+
+		echo '<br>';
+
+		print_r(MD5('admin'));
+
 	}
 }
 

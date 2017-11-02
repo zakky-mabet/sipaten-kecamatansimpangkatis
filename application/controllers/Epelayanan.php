@@ -25,7 +25,7 @@ class Epelayanan extends CI_Controller {
 	public function index()
 	{
 		$data = array(
-			'title' => 'E-Pelayanan - SIMKIS Simpangkatis District Information And Service Center - Kecamatan Simpangkatis - Kabupaten Bangka Tengah',
+			'title' => 'E-Pelayanan - PAKISS Simpang Katis Informations And Services  - Kecamatan Simpang Katis - Kabupaten Bangka Tengah',
 			'crumb' => 'E-Pelayanan',
 			'perizinan' 	=>  $this->m_elayanan->perizinan(),
 			'keterangan' 	=>  $this->m_elayanan->keterangan(),
@@ -35,7 +35,7 @@ class Epelayanan extends CI_Controller {
 	public function histori()
 	{
 		$data = array(
-			'title' => 'Riwayat Pelayanan - SIMKIS Simpangkatis District Information And Service Center - Kecamatan Simpangkatis - Kabupaten Bangka Tengah',
+			'title' => 'Riwayat Pelayanan - PAKISS Simpang Katis Informations And Services  - Kecamatan Simpang Katis - Kabupaten Bangka Tengah',
 			'crumb' => 'Riwayat Pelayanan',
 			'histori' => $this->m_elayanan->get_histori(),
 			);
@@ -45,7 +45,7 @@ class Epelayanan extends CI_Controller {
 	public function sktm($kode=48)
 	{
 		$data = array(
-			'title' => 'Surat Keterangan Tidak Mampu - SIMKIS Simpangkatis District Information And Service Center - Kecamatan Simpangkatis - Kabupaten Bangka Tengah',
+			'title' => 'Surat Keterangan Tidak Mampu - PAKISS Simpang Katis Informations And Services  - Kecamatan Simpang Katis - Kabupaten Bangka Tengah',
 			'crumb' => 'Surat Keterangan Tidak Mampu',
 			'desa'  => $this->m_elayanan->desa(),
 			'file'  => $this->m_elayanan->get_file($kode),
@@ -225,7 +225,7 @@ class Epelayanan extends CI_Controller {
 	public function skkb()
 	{
 		$data = array(
-			'title' => 'Surat Keterangan Kelakuan Baik - SIMKIS Simpangkatis District Information And Service Center - Kecamatan Simpangkatis - Kabupaten Bangka Tengah',
+			'title' => 'Surat Keterangan Kelakuan Baik - PAKISS Simpang Katis Informations And Services  - Kecamatan Simpang Katis - Kabupaten Bangka Tengah',
 			'crumb' => 'Surat Keterangan Kelakuan Baik',
 			'desa'  => $this->m_elayanan->desa(),
 			);
@@ -394,7 +394,7 @@ class Epelayanan extends CI_Controller {
     public function srku()
 	{
 		$data = array(
-			'title' => 'Surat Rekomendasi Keterangan Usaha  - SIMKIS Simpangkatis District Information And Service Center - Kecamatan Simpangkatis - Kabupaten Bangka Tengah',
+			'title' => 'Surat Rekomendasi Keterangan Usaha  - PAKISS Simpang Katis Informations And Services  - Kecamatan Simpang Katis - Kabupaten Bangka Tengah',
 			'crumb' => 'Surat Rekomendasi Keterangan Usaha',
 			'desa'  => $this->m_elayanan->desa(),
 			'agama' => $this->agama->get_all_agama(),
@@ -573,7 +573,7 @@ class Epelayanan extends CI_Controller {
     public function srig()
 	{
 		$data = array(
-			'title' => 'Surat Rekomendasi Izin Gangguan  - SIMKIS Simpangkatis District Information And Service Center - Kecamatan Simpangkatis - Kabupaten Bangka Tengah',
+			'title' => 'Surat Rekomendasi Izin Gangguan  - PAKISS Simpang Katis Informations And Services  - Kecamatan Simpang Katis - Kabupaten Bangka Tengah',
 			'crumb' => 'Surat Rekomendasi Izin Gangguan',
 			'desa'  => $this->m_elayanan->desa(),
 			'agama' => $this->agama->get_all_agama(),
@@ -850,7 +850,7 @@ class Epelayanan extends CI_Controller {
 	public function rpio()
 	{
 		$data = array(
-			'title' => 'Surat Rekomendasi Perpanjangan Izin Operasional  - SIMKIS Simpangkatis District Information And Service Center - Kecamatan Simpangkatis - Kabupaten Bangka Tengah',
+			'title' => 'Surat Rekomendasi Perpanjangan Izin Operasional  - PAKISS Simpang Katis Informations And Services  - Kecamatan Simpang Katis - Kabupaten Bangka Tengah',
 			'crumb' => 'Surat Rekomendasi Perpanjangan Izin Operasional',
 			'desa'  => $this->m_elayanan->desa(),
 			'agama' => $this->agama->get_all_agama(),
@@ -1030,7 +1030,7 @@ class Epelayanan extends CI_Controller {
 	public function rpik()
 	{
 		$data = array(
-			'title' => 'Surat Rekomendasi Izin Keramaian  - SIMKIS Simpangkatis District Information And Service Center - Kecamatan Simpangkatis - Kabupaten Bangka Tengah',
+			'title' => 'Surat Rekomendasi Izin Keramaian  - PAKISS Simpang Katis Informations And Services  - Kecamatan Simpang Katis - Kabupaten Bangka Tengah',
 			'crumb' => 'Surat Rekomendari Izin Keramaian',
 			'desa'  => $this->m_elayanan->desa(),
 			'hari'  => $this->m_elayanan->hari(),
@@ -1215,7 +1215,7 @@ class Epelayanan extends CI_Controller {
 	public function kdp()
 	{
 		$data = array(
-			'title' => 'Surat Keterangan Domisili Perusahaan  - SIMKIS Simpangkatis District Information And Service Center - Kecamatan Simpangkatis - Kabupaten Bangka Tengah',
+			'title' => 'Surat Keterangan Domisili Perusahaan  - PAKISS Simpang Katis Informations And Services  - Kecamatan Simpang Katis - Kabupaten Bangka Tengah',
 			'crumb' => 'Surat Keterangan Domisili Perusahaan',
 			'desa'  => $this->m_elayanan->desa(),
 			);
@@ -1428,7 +1428,7 @@ class Epelayanan extends CI_Controller {
 	public function imk()
 	{
 		$data = array(
-			'title' => 'Surat Izin Usaha Mikro Dan Kecil  - SIMKIS Simpangkatis District Information And Service Center - Kecamatan Simpangkatis - Kabupaten Bangka Tengah',
+			'title' => 'Surat Izin Usaha Mikro Dan Kecil  - PAKISS Simpang Katis Informations And Services  - Kecamatan Simpang Katis - Kabupaten Bangka Tengah',
 			'crumb' => 'Surat Izin Usaha Mikro Dan Kecil',
 			'desa'  => $this->m_elayanan->desa(),
 			);
@@ -1666,7 +1666,7 @@ class Epelayanan extends CI_Controller {
 	public function sbl()
 	{
 		$data = array(
-			'title' => 'Surat Keterangan Bersih Lingkungan Keluarga  - SIMKIS Simpangkatis District Information And Service Center - Kecamatan Simpangkatis - Kabupaten Bangka Tengah',
+			'title' => 'Surat Keterangan Bersih Lingkungan Keluarga  - PAKISS Simpang Katis Informations And Services  - Kecamatan Simpang Katis - Kabupaten Bangka Tengah',
 			'crumb' => 'Surat Keterangan Bersih Lingkungan Keluarga',
 			'desa'  => $this->m_elayanan->desa(),
 			);
@@ -1841,7 +1841,7 @@ class Epelayanan extends CI_Controller {
     public function skw()
 	{
 		$data = array(
-			'title' => 'Surat Keterangan Waris  - SIMKIS Simpangkatis District Information And Service Center - Kecamatan Simpangkatis - Kabupaten Bangka Tengah',
+			'title' => 'Surat Keterangan Waris  - PAKISS Simpang Katis Informations And Services  - Kecamatan Simpang Katis - Kabupaten Bangka Tengah',
 			'crumb' => 'Surat Keterangan Waris',
 			'desa'  => $this->m_elayanan->desa(),
 			'hari'  => $this->m_elayanan->hari(),
@@ -2044,7 +2044,7 @@ class Epelayanan extends CI_Controller {
     public function siup()
 	{
 		$data = array(
-			'title' => 'Surat Rekomendasi Izin Usaha Perdagangan  - SIMKIS Simpangkatis District Information And Service Center - Kecamatan Simpangkatis - Kabupaten Bangka Tengah',
+			'title' => 'Surat Rekomendasi Izin Usaha Perdagangan  - PAKISS Simpang Katis Informations And Services  - Kecamatan Simpang Katis - Kabupaten Bangka Tengah',
 			'crumb' => 'Surat Rekomendasi Izin Usaha Perdagangan',
 			'desa'  => $this->m_elayanan->desa(),
 			);
@@ -2403,7 +2403,7 @@ class Epelayanan extends CI_Controller {
     public function kts()
 	{
 		$data = array(
-			'title' => 'Surat Keterangan Tinggal Sementara  - SIMKIS Simpangkatis District Information And Service Center - Kecamatan Simpangkatis - Kabupaten Bangka Tengah',
+			'title' => 'Surat Keterangan Tinggal Sementara  - PAKISS Simpang Katis Informations And Services  - Kecamatan Simpang Katis - Kabupaten Bangka Tengah',
 			'crumb' => 'Surat Keterangan Tinggal Sementara',
 			'desa'  => $this->m_elayanan->desa(),
 			'darah'  => $this->m_elayanan->darah(),
@@ -2633,7 +2633,7 @@ class Epelayanan extends CI_Controller {
     public function imb()
 	{
 		$data = array(
-			'title' => 'Surat Izin Mendirikan Bangunan  - SIMKIS Simpangkatis District Information And Service Center - Kecamatan Simpangkatis - Kabupaten Bangka Tengah',
+			'title' => 'Surat Izin Mendirikan Bangunan  - PAKISS Simpang Katis Informations And Services  - Kecamatan Simpang Katis - Kabupaten Bangka Tengah',
 			'crumb' => 'Surat Izin Mendirikan Bangunan',
 			'desa'  => $this->m_elayanan->desa(),
 		
@@ -2989,7 +2989,7 @@ class Epelayanan extends CI_Controller {
 
      public function sp3fat(){
 		$data = array(
-			'title' => ' Surat Pernyataan Pengakuan Penguasaan Fisik Atas Tanah  - SIMKIS Simpangkatis District Information And Service Center - Kecamatan Simpangkatis - Kabupaten Bangka Tengah',
+			'title' => ' Surat Pernyataan Pengakuan Penguasaan Fisik Atas Tanah  - PAKISS Simpang Katis Informations And Services  - Kecamatan Simpang Katis - Kabupaten Bangka Tengah',
 			'crumb' => ' Surat Pernyataan Pengakuan Penguasaan Fisik Atas Tanah',
 			'desa'  => $this->m_elayanan->desa(),
 			'agama'  => $this->m_elayanan->agama(),
@@ -3185,7 +3185,7 @@ class Epelayanan extends CI_Controller {
 
     public function sp4fat(){
 		$data = array(
-			'title' => ' Surat Pernyataan Pelepasan dan Penyerahan Penguasaan Fisik Atas Tanah  - SIMKIS Simpangkatis District Information And Service Center - Kecamatan Simpangkatis - Kabupaten Bangka Tengah',
+			'title' => ' Surat Pernyataan Pelepasan dan Penyerahan Penguasaan Fisik Atas Tanah  - PAKISS Simpang Katis Informations And Services  - Kecamatan Simpang Katis - Kabupaten Bangka Tengah',
 			'crumb' => ' Surat Pernyataan Pelepasan dan Penyerahan Penguasaan Fisik Atas Tanah',
 			'desa'  => $this->m_elayanan->desa(),
 			'agama'  => $this->m_elayanan->agama(),
@@ -3380,7 +3380,7 @@ class Epelayanan extends CI_Controller {
     public function kpj()
 	{
 		$data = array(
-			'title' => 'Surat Keterangan Pindah Jiwa  - SIMKIS Simpangkatis District Information And Service Center - Kecamatan Simpangkatis - Kabupaten Bangka Tengah',
+			'title' => 'Surat Keterangan Pindah Jiwa  - PAKISS Simpang Katis Informations And Services  - Kecamatan Simpang Katis - Kabupaten Bangka Tengah',
 			'crumb' => 'Surat Keterangan Pindah Jiwa',
 			'desa'  => $this->m_elayanan->desa(),
 			'agama'  => $this->m_elayanan->agama(),
@@ -3593,7 +3593,7 @@ class Epelayanan extends CI_Controller {
      public function kpw()
 	{
 		$data = array(
-			'title' => 'Surat Keterangan Pindah WNI  - SIMKIS Simpangkatis District Information And Service Center - Kecamatan Simpangkatis - Kabupaten Bangka Tengah',
+			'title' => 'Surat Keterangan Pindah WNI  - PAKISS Simpang Katis Informations And Services  - Kecamatan Simpang Katis - Kabupaten Bangka Tengah',
 			'crumb' => 'Surat Keterangan Pindah WNI ',
 			'desa'  => $this->m_elayanan->desa(),
 			'agama'  => $this->m_elayanan->agama(),
@@ -3826,7 +3826,7 @@ class Epelayanan extends CI_Controller {
 						$this->form_validation->set_rules('modal_usaha', 'Jumlah Modal Usaha', 'trim|required');
 						$this->form_validation->set_rules('nomor_pendaftaran', 'Nomor Pendaftaran Perusahaan', 'trim|required');
 				        $data = array(
-				            'title' => 'Edit Surat Izin Usaha Mikro dan Kecil - SIMKIS Simpangkatis District Information And Service Center - Kecamatan Simpangkatis - Kabupaten Bangka Tengah',
+				            'title' => 'Edit Surat Izin Usaha Mikro dan Kecil - PAKISS Simpang Katis Informations And Services  - Kecamatan Simpang Katis - Kabupaten Bangka Tengah',
 				            'crumb' => 'Edit Surat Izin Usaha Mikro dan Kecil',
 				            'syarat' => 'Surat Izin Usaha Mikro dan Kecil',
 				            'edit'  => $this->m_elayanan->get_detail($ID),
@@ -4026,7 +4026,7 @@ class Epelayanan extends CI_Controller {
 
 			    case 48: // sktm
 					 $data = array(
-						'title' => 'Surat Keterangan Tidak Mampu - SIMKIS Simpangkatis District Information And Service Center - Kecamatan Simpangkatis - Kabupaten Bangka Tengah',
+						'title' => 'Surat Keterangan Tidak Mampu - PAKISS Simpang Katis Informations And Services  - Kecamatan Simpang Katis - Kabupaten Bangka Tengah',
 						'crumb' => 'Edit Surat Keterangan Tidak Mampu',
 				        'syarat' => 'Surat Keterangan Tidak Mampu',
 				        'edit'  => $this->m_elayanan->get_detail($ID),
@@ -4166,7 +4166,7 @@ class Epelayanan extends CI_Controller {
 
 			    case 8: // rpik
 			    	$data = array(
-						'title' => 'Surat Rekomendasi Izin Keramaian  - SIMKIS Simpangkatis District Information And Service Center - Kecamatan Simpangkatis - Kabupaten Bangka Tengah',
+						'title' => 'Surat Rekomendasi Izin Keramaian  - PAKISS Simpang Katis Informations And Services  - Kecamatan Simpang Katis - Kabupaten Bangka Tengah',
 						'crumb' => 'Edit Surat Rekomendari Izin Keramaian',
 						'syarat' => 'Surat Rekomendari Izin Keramaian',
 						'desa'  => $this->m_elayanan->desa(),
@@ -4316,7 +4316,7 @@ class Epelayanan extends CI_Controller {
 
 			    case 503: // skkb
 			    		$data = array(
-			'title' => 'Surat Keterangan Kelakuan Baik - SIMKIS Simpangkatis District Information And Service Center - Kecamatan Simpangkatis - Kabupaten Bangka Tengah',
+			'title' => 'Surat Keterangan Kelakuan Baik - PAKISS Simpang Katis Informations And Services  - Kecamatan Simpang Katis - Kabupaten Bangka Tengah',
 			'crumb' => 'Edit Surat Keterangan Kelakuan Baik',
 			'syarat' => 'Surat Keterangan Kelakuan Baik',
 			'desa'  => $this->m_elayanan->desa(),
@@ -4452,7 +4452,7 @@ class Epelayanan extends CI_Controller {
 
 			    case 19: // skw
 			    	$data = array(
-					'title' => 'Edit Surat Keterangan Waris  - SIMKIS Simpangkatis District Information And Service Center - Kecamatan Simpangkatis - Kabupaten Bangka Tengah',
+					'title' => 'Edit Surat Keterangan Waris  - PAKISS Simpang Katis Informations And Services  - Kecamatan Simpang Katis - Kabupaten Bangka Tengah',
 					'crumb' => 'Edit Surat Keterangan Waris',
 					'syarat' => 'Surat Keterangan Waris',
 					'desa'  => $this->m_elayanan->desa(),
@@ -4639,7 +4639,7 @@ class Epelayanan extends CI_Controller {
 
 			    case 3: // kst
 			    $data = array(
-				'title' => ' Edit Surat Keterangan Tinggal Sementara  - SIMKIS Simpangkatis District Information And Service Center - Kecamatan Simpangkatis - Kabupaten Bangka Tengah',
+				'title' => ' Edit Surat Keterangan Tinggal Sementara  - PAKISS Simpang Katis Informations And Services  - Kecamatan Simpang Katis - Kabupaten Bangka Tengah',
 				'crumb' => 'Edit Surat Keterangan Tinggal Sementara',
 				'syarat' => 'Surat Keterangan Tinggal Sementara',
 				'desa'  => $this->m_elayanan->desa(),
@@ -4834,7 +4834,7 @@ class Epelayanan extends CI_Controller {
 
 			    case 2: // kdp
 			    	$data = array(
-						'title' => 'Edit Surat Keterangan Domisili Perusahaan  - SIMKIS Simpangkatis District Information And Service Center - Kecamatan Simpangkatis - Kabupaten Bangka Tengah',
+						'title' => 'Edit Surat Keterangan Domisili Perusahaan  - PAKISS Simpang Katis Informations And Services  - Kecamatan Simpang Katis - Kabupaten Bangka Tengah',
 						'crumb' => 'Edit Surat Keterangan Domisili Perusahaan',
 						'syarat' => 'Surat Keterangan Domisili Perusahaan',
 						'desa'  => $this->m_elayanan->desa(),
@@ -5033,7 +5033,7 @@ class Epelayanan extends CI_Controller {
 			    break; // kdp
 			    case 1: // kpj
 			    	$data = array(
-				'title' => 'Edit Surat Keterangan Pindah Jiwa  - SIMKIS Simpangkatis District Information And Service Center - Kecamatan Simpangkatis - Kabupaten Bangka Tengah',
+				'title' => 'Edit Surat Keterangan Pindah Jiwa  - PAKISS Simpang Katis Informations And Services  - Kecamatan Simpang Katis - Kabupaten Bangka Tengah',
 				'crumb' => 'Edit Surat Keterangan Pindah Jiwa',
 				'syarat' => 'Surat Keterangan Pindah Jiwa',
 				'desa'  => $this->m_elayanan->desa(),
@@ -5205,7 +5205,7 @@ class Epelayanan extends CI_Controller {
 
 			    case 12: // srku
 			    	$data = array(
-						'title' => 'Edit Surat Rekomendasi Keterangan Usaha  - SIMKIS Simpangkatis District Information And Service Center - Kecamatan Simpangkatis - Kabupaten Bangka Tengah',
+						'title' => 'Edit Surat Rekomendasi Keterangan Usaha  - PAKISS Simpang Katis Informations And Services  - Kecamatan Simpang Katis - Kabupaten Bangka Tengah',
 						'crumb' => 'Edit Surat Rekomendasi Keterangan Usaha',
 						'syarat' => 'Surat Rekomendasi Keterangan Usaha',
 						'desa'  => $this->m_elayanan->desa(),
@@ -5344,7 +5344,7 @@ class Epelayanan extends CI_Controller {
 			    
 			    case 5: // sbl
 					$data = array(
-					'title' => 'Edit Surat Keterangan Bersih Lingkungan Keluarga  - SIMKIS Simpangkatis District Information And Service Center - Kecamatan Simpangkatis - Kabupaten Bangka Tengah',
+					'title' => 'Edit Surat Keterangan Bersih Lingkungan Keluarga  - PAKISS Simpang Katis Informations And Services  - Kecamatan Simpang Katis - Kabupaten Bangka Tengah',
 					'crumb' => 'Edit Surat Keterangan Bersih Lingkungan Keluarga',
 					'syarat' => 'Surat Keterangan Bersih Lingkungan Keluarga',
 					'desa'  => $this->m_elayanan->desa(),
@@ -5482,7 +5482,7 @@ class Epelayanan extends CI_Controller {
 
 			    case 7 : // siup
 			    	$data = array(
-			'title' => 'Edit Surat Rekomendasi Izin Usaha Perdagangan  - SIMKIS Simpangkatis District Information And Service Center - Kecamatan Simpangkatis - Kabupaten Bangka Tengah',
+			'title' => 'Edit Surat Rekomendasi Izin Usaha Perdagangan  - PAKISS Simpang Katis Informations And Services  - Kecamatan Simpang Katis - Kabupaten Bangka Tengah',
 			'crumb' => 'Edit Surat Rekomendasi Izin Usaha Perdagangan',
 			'syarat' => 'Surat Rekomendasi Izin Usaha Perdagangan',
 			'desa'  => $this->m_elayanan->desa(),
@@ -5808,7 +5808,7 @@ class Epelayanan extends CI_Controller {
 			    break; // siup
 			case 9: // imb    
 			    	$data = array(
-			'title' => 'Edit Surat Izin Mendirikan Bangunan  - SIMKIS Simpangkatis District Information And Service Center - Kecamatan Simpangkatis - Kabupaten Bangka Tengah',
+			'title' => 'Edit Surat Izin Mendirikan Bangunan  - PAKISS Simpang Katis Informations And Services  - Kecamatan Simpang Katis - Kabupaten Bangka Tengah',
 			'crumb' => 'Edit Surat Izin Mendirikan Bangunan',
 			'syarat' => 'Surat Izin Mendirikan Bangunan',
 			'desa'  => $this->m_elayanan->desa(),
@@ -6133,7 +6133,7 @@ class Epelayanan extends CI_Controller {
 			    break; // imb
 			    case 11: // srig
 			    	$data = array(
-			'title' => ' Edit Surat Rekomendasi Izin Gangguan  - SIMKIS Simpangkatis District Information And Service Center - Kecamatan Simpangkatis - Kabupaten Bangka Tengah',
+			'title' => ' Edit Surat Rekomendasi Izin Gangguan  - PAKISS Simpang Katis Informations And Services  - Kecamatan Simpang Katis - Kabupaten Bangka Tengah',
 			'crumb' => 'Edit Surat Rekomendasi Izin Gangguan',
 			'syarat' => 'Surat Rekomendasi Izin Gangguan',
 			'desa'  => $this->m_elayanan->desa(),
@@ -6372,7 +6372,7 @@ class Epelayanan extends CI_Controller {
 			    break; // srig
 			    case 13: // rpio
 			    	$data = array(
-			'title' => ' Edit Surat Rekomendasi Perpanjangan Izin Operasional  - SIMKIS Simpangkatis District Information And Service Center - Kecamatan Simpangkatis - Kabupaten Bangka Tengah',
+			'title' => ' Edit Surat Rekomendasi Perpanjangan Izin Operasional  - PAKISS Simpang Katis Informations And Services  - Kecamatan Simpang Katis - Kabupaten Bangka Tengah',
 			'crumb' => 'Edit Surat Rekomendasi Perpanjangan Izin Operasional',
 			'syarat' => 'Surat Rekomendasi Perpanjangan Izin Operasional',
 			'desa'  => $this->m_elayanan->desa(),
@@ -6537,7 +6537,7 @@ class Epelayanan extends CI_Controller {
 			    case 16: //sp3fat
 			    	$data = array(
 
-			'title' => 'Edit Surat Pernyataan Pengakuan Penguasaan Fisik Atas Tanah  - SIMKIS Simpangkatis District Information And Service Center - Kecamatan Simpangkatis - Kabupaten Bangka Tengah',
+			'title' => 'Edit Surat Pernyataan Pengakuan Penguasaan Fisik Atas Tanah  - PAKISS Simpang Katis Informations And Services  - Kecamatan Simpang Katis - Kabupaten Bangka Tengah',
 			'crumb' => 'Edit Surat Pernyataan Pengakuan Penguasaan Fisik Atas Tanah',
 			'syarat' => ' Surat Pernyataan Pengakuan Penguasaan Fisik Atas Tanah',
 			'desa'  => $this->m_elayanan->desa(),
@@ -6695,7 +6695,7 @@ class Epelayanan extends CI_Controller {
 			    case 17: //sp4fat
 			    	$data = array(
 
-			'title' => 'Edit Surat Pernyataan Pelepasan dan Penyerahan Penguasaan Fisik Atas Tanah - SIMKIS Simpangkatis District Information And Service Center - Kecamatan Simpangkatis - Kabupaten Bangka Tengah',
+			'title' => 'Edit Surat Pernyataan Pelepasan dan Penyerahan Penguasaan Fisik Atas Tanah - PAKISS Simpang Katis Informations And Services  - Kecamatan Simpang Katis - Kabupaten Bangka Tengah',
 			'crumb' => 'Edit Surat Pernyataan Pelepasan dan Penyerahan Penguasaan Fisik Atas Tanah',
 			'syarat' => ' Surat Pernyataan Pelepasan dan Penyerahan Penguasaan Fisik Atas Tanah',
 			'desa'  => $this->m_elayanan->desa(),
@@ -6852,7 +6852,7 @@ class Epelayanan extends CI_Controller {
 
 			    case 4:
 			    	$data = array(
-			'title' => 'Edit Surat Keterangan Pindah WNI  - SIMKIS Simpangkatis District Information And Service Center - Kecamatan Simpangkatis - Kabupaten Bangka Tengah',
+			'title' => 'Edit Surat Keterangan Pindah WNI  - PAKISS Simpang Katis Informations And Services  - Kecamatan Simpang Katis - Kabupaten Bangka Tengah',
 			'crumb' => 'Edit Surat Keterangan Pindah WNI ',
 			'syarat' => 'Surat Keterangan Pindah WNI ',
 			'desa'  => $this->m_elayanan->desa(),
@@ -7040,7 +7040,7 @@ class Epelayanan extends CI_Controller {
           show_404();
 
         $data = array(
-            'title' => 'Detail Permohonan Pelayanan - SIMKIS Simpangkatis District Information And Service Center - Kecamatan Simpangkatis - Kabupaten Bangka Tengah',
+            'title' => 'Detail Permohonan Pelayanan - PAKISS Simpang Katis Informations And Services  - Kecamatan Simpang Katis - Kabupaten Bangka Tengah',
             'crumb' => 'Detail Permohonan',
             'detail_layanan' => $this->m_elayanan->get_detail($ID),
             );
@@ -7100,7 +7100,7 @@ class Epelayanan extends CI_Controller {
   public function panduan()
   {
             $data = array(
-            'title' => 'Panduan Pelayanan - SIMKIS Simpangkatis District Information And Service Center - Kecamatan Simpangkatis - Kabupaten Bangka Tengah',
+            'title' => 'Panduan Pelayanan - PAKISS Simpang Katis Informations And Services  - Kecamatan Simpang Katis - Kabupaten Bangka Tengah',
             'crumb' => 'Panduan Pelayanan',
             'panduan' => $this->m_elayanan->get_panduan(), 
             );
@@ -7116,7 +7116,7 @@ class Epelayanan extends CI_Controller {
              $this->db->where($array);
              $query = $this->db->get('panduan_pelayanan');
              $data = array(
-                'title' => 'Detail Panduan Pelayanan - SIMKIS Simpangkatis District Information And Service Center - Kecamatan Simpangkatis - Kabupaten Bangka Tengah',
+                'title' => 'Detail Panduan Pelayanan - PAKISS Simpang Katis Informations And Services  - Kecamatan Simpang Katis - Kabupaten Bangka Tengah',
                 'crumb' => 'Detail Panduan Pelayanan',
                 'panduan' => $this->m_elayanan->get_panduan_read($slug), 
             );

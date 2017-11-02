@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>  <?php echo (isset($data['title']) ? $data['title'] : "SIMKIS Kecamatan Simpangkatis Kabupaten Bangka Tengah") ?></title>
+  <title>  <?php echo (isset($data['title']) ? $data['title'] : "PAKISS Kecamatan Simpang Katis Kabupaten Bangka Tengah") ?></title>
   <meta name="author" content="Cv. Teitra Mega">
   <meta name="theme-color" content="#0AA658">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
@@ -67,9 +67,9 @@
           <div style="float: left; margin-top: 3px;">  
               <b class="sim" style="letter-spacing: 5px;  
               -webkit-text-stroke-width: 1px;
-              -webkit-text-stroke-color: green;">&nbsp;SIMKIS</b>
+              -webkit-text-stroke-color: green;">&nbsp;PAKISS</b>
               <br> 
-              <div style="margin-top: -10px; font-size: 0.8em;" class="white">&nbsp;&nbsp;&nbsp;&nbsp; Simpangkatis District Information  <!--And  Service Center  --></div>
+              <div style="margin-top: -10px; font-size: 0.8em;" class="white">&nbsp;&nbsp;&nbsp;&nbsp; Simpang Katis  Informations And  Services </div>
           </div>
 
           </div>
@@ -246,9 +246,9 @@
           <div style="float: left; margin-top: 3px;">  
               <b class="sim" style="letter-spacing: 4px;  
               -webkit-text-stroke-width: 1px;
-              -webkit-text-stroke-color: green;">&nbsp;SIMKIS</b>
+              -webkit-text-stroke-color: green;">&nbsp;PAKISS</b>
               <br> 
-              <div style="margin-top: -10px; font-size: 0.9em;" class="white">&nbsp;&nbsp;&nbsp;&nbsp; Simpangkatis District Information  And Service Center</div>
+              <div style="margin-top: -10px; font-size: 0.9em;" class="white">&nbsp;&nbsp;&nbsp;&nbsp; Simpang Katis  Informations  And Services </div>
           </div>  
           </div>
         </div>
@@ -375,7 +375,7 @@
     <div class="container color-black padbottom">
         <div class="col-md-6">   
         <?php date_default_timezone_set("Asia/Bangkok"); ?>
-       Copyright <?php $thn = ( date('Y') == 2017 ) ? date('Y') : '2017-'.date('Y'); echo '&copy; '.$thn; ?> <span>Kec.Simpangkatis Bangka Tengah</span> 
+       Copyright <?php $thn = ( date('Y') == 2017 ) ? date('Y') : '2017-'.date('Y'); echo '&copy; '.$thn; ?> <span>Kec.Simpang Katis Bangka Tengah</span> 
         <br>
           <p style="margin:-6px; font-size:0.8em; line-height: 20px">&nbsp;&nbsp;<?php echo ($this->agent->is_mobile()) ? '' :'Developed by : <a href="https://www.facebook.com/teitramega">CV. Teitra Mega</a>';?></p>
           <p style="margin:-6px; font-size:0.8em; line-height: 20px">&nbsp;&nbsp;<?php echo ($this->agent->is_mobile()) ? 'Developed by : <a href="https://www.facebook.com/teitramega"> CV. Teitra Mega</a>' :'';?></p>

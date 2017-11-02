@@ -18,8 +18,8 @@
       	 <?php  if ($this->agent->is_mobile()) {  ?>
         	<div  class="col-md-12 text-center" style="margin-top: -80px;">
         		&nbsp;<br>&nbsp;<br>
-				<h1  style="color:#444; margin:10px;  font-size:4em; font-weight: 600; letter-spacing:5px;  text-shadow: 1px 1px 1px #000;">SIMKIS	</h1>
-	        	<p style="margin:-15px;" >Simpangkatis District  Information &amp; Services Center</p>	
+				<h1  style="color:#444; margin:10px;  font-size:4em; font-weight: 600; letter-spacing:5px;  text-shadow: 1px 1px 1px #000;">PAKISS	</h1>
+	        	<p style="margin:-15px;" >Simpang Katis Informations &amp; Services</p>	
 				<br>&nbsp;
         	</div>
         <?php } ?>

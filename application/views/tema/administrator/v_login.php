@@ -3,7 +3,7 @@
    <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <title>Login | Administrator KISS Kecamatan Koba Kabupaten Bangka Tengah</title>
+      <title>Login | Administrator PAKISS Kecamatan Simpang Katis Kabupaten Bangka Tengah</title>
       <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
       <link rel="stylesheet" href="<?php echo base_url('assets/bootstrap/css/bootstrap.min.css'); ?>">
       <link rel="stylesheet" href="<?php echo base_url('assets/font-awesome/css/font-awesome.min.css'); ?>">
@@ -91,7 +91,7 @@
    </div>
    <?php date_default_timezone_set("Asia/Bangkok"); ?>
    <div class="lockscreen-footer text-center" style="margin-top: 0px; color: #444">
-      <small>Hak Cipta &copy; <?php echo date('Y'); ?> <br> Kec. Simpangkatis, Kab. Bangka Tengah. All rights reserved.</small>
+      <small>Hak Cipta &copy; <?php echo date('Y'); ?> <br> Kec. Simpang Katis, Kab. Bangka Tengah. All rights reserved.</small>
    </div>
 </div>
       <!-- /.login-box -->

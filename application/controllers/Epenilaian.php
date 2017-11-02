@@ -28,7 +28,7 @@ class Epenilaian extends CI_Controller {
     {
 
         $data = array(
-            'title' => 'E-Penilaian - SIMKIS - Simpangkatis District Information And Service Center - Kabupaten Bangka Tengah',
+            'title' => 'E-Penilaian - PAKISS - Simpang Katis Informations And Services - Kabupaten Bangka Tengah',
             'crumb' => 'Epenilaian'  
             );
         $this->template->view('main/penilaian/v_penilaian_home', $data);
@@ -58,7 +58,7 @@ class Epenilaian extends CI_Controller {
         else {
             
         $data = array(
-            'title' => 'Beri Penilaian - SIMKIS - Simpangkatis District Information And Service Center - Kabupaten Bangka Tengah',
+            'title' => 'Beri Penilaian - PAKISS - Simpang Katis Informations And Services - Kabupaten Bangka Tengah',
             'crumb' => 'Beri Penilaian' ,
             'nilai' => $this->m_epenilaian->get_nilai($param), 
             );
@@ -67,7 +67,7 @@ class Epenilaian extends CI_Controller {
     public function pengaduan()
     {
         $data = array(
-            'title' => 'Penilaian Pengaduan - SIMKIS - Simpangkatis District Information And Service Center - Kabupaten Bangka Tengah',
+            'title' => 'Penilaian Pengaduan - PAKISS - Simpang Katis Informations And Services - Kabupaten Bangka Tengah',
             'crumb' => 'Penilaian Pengaduan',
             'penilaian_pengaduan' => $this->m_epenilaian->get_all(),  
             );
@@ -76,7 +76,7 @@ class Epenilaian extends CI_Controller {
      public function pelayanan()
     {
         $data = array(
-            'title' => 'Penilaian Pelayanan - SIMKIS - Simpangkatis District Information And Service Center - Kabupaten Bangka Tengah',
+            'title' => 'Penilaian Pelayanan - PAKISS - Simpang Katis Informations And Services - Kabupaten Bangka Tengah',
             'crumb' => 'Penilaian Pelayanan',
             'penilaian_pengaduan' => $this->m_epenilaian->get_all_layanan(),  
             );
@@ -149,7 +149,7 @@ class Epenilaian extends CI_Controller {
     public function panduan()
   {
             $data = array(
-            'title' => 'Panduan Penilaian - SIMKIS Simpangkatis District Information And Service Center - Kecamatan Simpangkatis - Kabupaten Bangka Tengah',
+            'title' => 'Panduan Penilaian - PAKISS Simpang Katis Informations And Services - Kecamatan Simpang Katis - Kabupaten Bangka Tengah',
             'crumb' => 'Panduan Penilaian',
             'panduan' => $this->m_epenilaian->get_panduan(), 
             );
@@ -165,7 +165,7 @@ class Epenilaian extends CI_Controller {
              $this->db->where($array);
              $query = $this->db->get('panduan_pengaduan');
              $data = array(
-                'title' => 'Detail Panduan Penilaian - SIMKIS Simpangkatis District Information And Service Center - Kecamatan Simpangkatis - Kabupaten Bangka Tengah',
+                'title' => 'Detail Panduan Penilaian - PAKISS Simpang Katis Informations And Services - Kecamatan Simpang Katis - Kabupaten Bangka Tengah',
                 'crumb' => 'Detail Panduan Penilaian',
                 'panduan' => $this->m_epenilaian->get_panduan_read($slug), 
             );

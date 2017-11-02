@@ -4,7 +4,7 @@
 		<div class="box box-primary">
 			<div class="box-header with-border">
 				<div class="col-md-7">
-					<h3 class="box-title">Data Daftar Antrian</h3>
+					<h3 class="box-title">Data Rekap Antrian</h3>
 				</div>
 			</div>
 			<div class="box-body">
