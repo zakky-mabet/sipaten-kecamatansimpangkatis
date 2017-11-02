@@ -41,7 +41,7 @@ class Beranda extends CI_Controller {
     }
 
 		$this->data = array(
-            'title' => 'Kontak Kecamatan Koba',
+            'title' => 'Kontak Kecamatan Simpang Katis',
         );
 
        $this->template->view('kontak/kontak', $this->data);

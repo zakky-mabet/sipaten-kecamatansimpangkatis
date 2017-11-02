@@ -23,7 +23,7 @@ class Events extends CI_Controller {
 	public function index()
 	{	
 		
-		$this->page_title->push('Events', 'Events Kecamatan Koba');
+		$this->page_title->push('Events', 'Events Kecamatan Simpang Katis');
 		
 		$config = $this->template->pagination_list();
 
@@ -37,7 +37,7 @@ class Events extends CI_Controller {
 
 		$this->data = array(
 
-            'title' => 'Events Kecamatan Koba',
+            'title' => 'Events Kecamatan Simpang Katis',
         
             'get_kategori'	=> $this->mevents->get_kategori(),
             'get_tags'	=> $this->mevents->get_tags(),
@@ -55,11 +55,11 @@ class Events extends CI_Controller {
 		if (!$slug_kat) {
 			show_404();
 		} 
-		$this->page_title->push('Kategori Events ', 'Events Kecamatan Koba');
+		$this->page_title->push('Kategori Events ', 'Events Kecamatan Simpang Katis');
 
 		$this->data = array(
 
-            'title' => 'Kategori Events Kecamatan Koba',
+            'title' => 'Kategori Events Kecamatan Simpang Katis',
             'get_kategori'	=> $this->mevents->get_kategori(),
             'get_tags'	=> $this->mevents->get_tags(),
             'events_populer' => $this->mevents->events_populer(),
@@ -76,11 +76,11 @@ class Events extends CI_Controller {
 		if (!$slug_kat) {
 			show_404();
 		} 
-		$this->page_title->push('Tags Events ' , 'Events Kecamatan Koba');
+		$this->page_title->push('Tags Events ' , 'Events Kecamatan Simpang Katis');
 
 		$this->data = array(
 
-            'title' => 'Tags Events Kecamatan Koba',
+            'title' => 'Tags Events Kecamatan Simpang Katis',
             'get_kategori'	=> $this->mevents->get_kategori(),
             'get_tags'	=> $this->mevents->get_tags(),
             'events_populer' => $this->mevents->events_populer(),

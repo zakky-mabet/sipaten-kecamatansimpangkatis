@@ -22,7 +22,7 @@ class Album extends CI_Controller {
 	public function index()
 	{
 		
-		$this->page_title->push('Album Galeri', 'Album Kecamatan Koba');
+		$this->page_title->push('Album Galeri', 'Album Kecamatan Simpang Katis');
 		
 		$config = $this->template->pagination_list();
 
@@ -36,7 +36,7 @@ class Album extends CI_Controller {
 
 		$this->data = array(
 
-            'title' => 'Album Kecamatan Koba',
+            'title' => 'Album Kecamatan Simpang Katis',
         
             'berita_populer' => $this->mberita->berita_populer(),
             'events_populer' => $this->mevents->events_populer(),

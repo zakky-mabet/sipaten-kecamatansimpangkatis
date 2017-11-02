@@ -23,7 +23,7 @@ class Download extends CI_Controller {
 	public function index()
 	{	
 		
-		$this->page_title->push('Download', 'Data Download Kecamatan Koba');
+		$this->page_title->push('Download', 'Data Download Kecamatan Simpang Katis');
 		
 		$config = $this->template->pagination_list();
 
@@ -37,7 +37,7 @@ class Download extends CI_Controller {
 
 		$this->data = array(
 
-            'title' => 'Download Kecamatan Koba',
+            'title' => 'Download Kecamatan Simpang Katis',
             'berita_populer' => $this->mberita->berita_populer(),
             'events_populer' => $this->mevents->events_populer(),
             'get_all' => $this->mdownload->get_all($this->per_page, $this->page),

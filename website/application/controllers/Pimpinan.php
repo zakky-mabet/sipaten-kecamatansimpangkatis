@@ -23,7 +23,7 @@ class Pimpinan extends CI_Controller {
 	public function index()
 	{	
 		
-		$this->page_title->push('Pimpinan', 'Pimpinan Kecamatan Koba');
+		$this->page_title->push('Pimpinan', 'Pimpinan Kecamatan Simpang Katis');
 		
 		$config = $this->template->pagination_list();
 
@@ -37,7 +37,7 @@ class Pimpinan extends CI_Controller {
 
 		$this->data = array(
 
-            'title' => 'Pimpinan Kecamatan Koba',
+            'title' => 'Pimpinan Kecamatan Simpang Katis',
             'berita_populer' => $this->mberita->berita_populer(),
             'events_populer' => $this->mevents->events_populer(),
             'get_all' => $this->mpimpinan->get_all($this->per_page, $this->page),

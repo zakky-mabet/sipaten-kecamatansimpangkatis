@@ -23,7 +23,7 @@ class Data_pembangunan extends CI_Controller {
 	public function index()
 	{	
 		
-		$this->page_title->push('Data Pembangunan', 'Data Pembangunan Kecamatan Koba');
+		$this->page_title->push('Data Pembangunan', 'Data Pembangunan Kecamatan Simpang Katis');
 		
 		$config = $this->template->pagination_list();
 
@@ -37,7 +37,7 @@ class Data_pembangunan extends CI_Controller {
 
 		$this->data = array(
 
-            'title' => 'Data Pembangunan Kecamatan Koba',
+            'title' => 'Data Pembangunan Kecamatan Simpang Katis',
             'berita_populer' => $this->mberita->berita_populer(),
             'events_populer' => $this->mevents->events_populer(),
             'get_all' => $this->mdata_pembangunan->get_all($this->per_page, $this->page),
@@ -51,7 +51,7 @@ class Data_pembangunan extends CI_Controller {
     public function download($query ='',$lokasi ='', $tahun ='')
     {   
         
-        $this->page_title->push('Data Pembangunan', 'Data Pembangunan Kecamatan Koba');
+        $this->page_title->push('Data Pembangunan', 'Data Pembangunan Kecamatan Simpang Katis');
         
         $config = $this->template->pagination_list();
 
@@ -65,7 +65,7 @@ class Data_pembangunan extends CI_Controller {
 
         $this->data = array(
 
-            'title' => 'Data Pembangunan Kecamatan Koba',
+            'title' => 'Data Pembangunan Kecamatan Simpang Katis',
             'berita_populer' => $this->mberita->berita_populer(),
             'events_populer' => $this->mevents->events_populer(),
             'get_all' => $this->mdata_pembangunan->get_all($this->per_page, $this->page),

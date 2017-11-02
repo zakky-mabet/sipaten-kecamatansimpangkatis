@@ -101,52 +101,6 @@ if ( ! function_exists('bulan'))
 	}
 }
 
-if ( ! function_exists('bulan_english'))
-{
-	function bulan_english($bln)
-	{
-		switch ($bln)
-		{
-			case 01:
-				return "JAN";
-				break;
-			case 02:
-				return "FEB";
-				break;
-			case 03:
-				return "MAR";
-				break;
-			case 04:
-				return "APR";
-				break;
-			case 05:
-				return "MAY";
-				break;
-			case 06:
-				return "JUN";
-				break;
-			case 07:
-				return "JUL";
-				break;
-			case 08:
-				return "Augt";
-				break;
-			case 09:
-				return "SEP";
-				break;
-			case 10:
-				return "OCT";
-				break;
-			case 11:
-				return "NOV";
-				break;
-			case 12:
-				return "DEC";
-				break;
-		}
-	}
-}
-
 
 if( !  function_exists('nomo_urut') )
 {

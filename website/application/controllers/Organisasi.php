@@ -9,7 +9,7 @@ class Organisasi extends CI_Controller {
 
 		$this->breadcrumbs->unshift(0, 'Beranda', ' ');
 
-        $this->breadcrumbs->unshift(1, 'Organisasi Kecamatan Koba', "organisasi");
+        $this->breadcrumbs->unshift(1, 'Organisasi Kecamatan Simpang Katis', "organisasi");
 
 	}
 
@@ -17,9 +17,9 @@ class Organisasi extends CI_Controller {
 	{	
 		
 		$this->morganisasi->uphit(1);
-		$this->page_title->push('Organisasi', 'Struktur Organisasi Kecamatan Koba');
+		$this->page_title->push('Organisasi', 'Struktur Organisasi Kecamatan Simpang Katis');
 		$this->data = array(
-            'title' => 'Struktur Organisasi Kecamatan Koba',
+            'title' => 'Struktur Organisasi Kecamatan Simpang Katis',
             'get'	=> $this->morganisasi->get_all(),
             'berita_populer' => $this->mberita->berita_populer(),
             'events_populer' => $this->mevents->events_populer(),

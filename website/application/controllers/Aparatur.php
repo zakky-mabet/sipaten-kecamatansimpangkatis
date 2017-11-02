@@ -23,7 +23,7 @@ class Aparatur extends CI_Controller {
 	public function index()
 	{	
 		
-		$this->page_title->push('Aparatur', 'Aparatur Kecamatan Koba');
+		$this->page_title->push('Aparatur', 'Aparatur Kecamatan Simpang Katis');
 		
 		$config = $this->template->pagination_list();
 
@@ -37,7 +37,7 @@ class Aparatur extends CI_Controller {
 
 		$this->data = array(
 
-            'title' => 'Aparatur Kecamatan Koba',
+            'title' => 'Aparatur Kecamatan Simpang Katis',
             'berita_populer' => $this->mberita->berita_populer(),
             'events_populer' => $this->mevents->events_populer(),
             'get_all' => $this->maparatur->get_all($this->per_page, $this->page),

@@ -17,7 +17,7 @@ class Syarat extends CI_Controller {
 	{	
 		
 		$this->msyarat->uphit(2);
-		$this->page_title->push('Syarat dan Ketentuan', 'Syarat dan Ketentuan Kecamatan Koba');
+		$this->page_title->push('Syarat dan Ketentuan', 'Syarat dan Ketentuan Kecamatan Simpang Katis');
 		$this->data = array(
             'title' => 'Syarat dan Ketentuan',
             'get'	=> $this->msyarat->get_all(),

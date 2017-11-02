@@ -23,7 +23,7 @@ class Berita extends CI_Controller {
 	public function index()
 	{	
 		
-		$this->page_title->push('Berita', 'Berita Kecamatan Koba');
+		$this->page_title->push('Berita', 'Berita Kecamatan Simpang Katis');
 		
 		$config = $this->template->pagination_list();
 
@@ -37,7 +37,7 @@ class Berita extends CI_Controller {
 
 		$this->data = array(
 
-            'title' => 'Berita Kecamatan Koba',
+            'title' => 'Berita Kecamatan Simpang Katis',
         
             'get_kategori'	=> $this->mberita->get_kategori(),
             'get_tags'	=> $this->mberita->get_tags(),
@@ -55,11 +55,11 @@ class Berita extends CI_Controller {
 		if (!$slug_kat) {
 			show_404();
 		} 
-		$this->page_title->push('Kategori Berita ', 'Berita Kecamatan Koba');
+		$this->page_title->push('Kategori Berita ', 'Berita Kecamatan Simpang Katis');
 
 		$this->data = array(
 
-            'title' => 'Kategori Berita Kecamatan Koba',
+            'title' => 'Kategori Berita Kecamatan Simpang Katis',
             'get_kategori'	=> $this->mberita->get_kategori(),
             'get_tags'	=> $this->mberita->get_tags(),
             'berita_populer' => $this->mberita->berita_populer(),
@@ -76,11 +76,11 @@ class Berita extends CI_Controller {
 		if (!$slug_kat) {
 			show_404();
 		} 
-		$this->page_title->push('Tags Berita ' , 'Berita Kecamatan Koba');
+		$this->page_title->push('Tags Berita ' , 'Berita Kecamatan Simpang Katis');
 
 		$this->data = array(
 
-            'title' => 'Tags Berita Kecamatan Koba',
+            'title' => 'Tags Berita Kecamatan Simpang Katis',
             'get_kategori'	=> $this->mberita->get_kategori(),
             'get_tags'	=> $this->mberita->get_tags(),
             'berita_populer' => $this->mberita->berita_populer(),
