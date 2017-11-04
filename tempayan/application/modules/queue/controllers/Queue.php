@@ -43,46 +43,46 @@ class Queue extends CI_Controller
 			'title' => "Print Customer Queue",
 			'print' => $this->mantrian->get_print($id),
 		);	
-		//$this->load->view('vprint', $this->data);
+		$this->load->view('vprint', $this->data);
 	
-		$your_printer_name = "POS-58";
-		$p=printer_open($your_printer_name);
-		printer_start_doc($p,"Testpage");
-		printer_start_page($p);
+		// $your_printer_name = "POS-58";
+		// $p=printer_open($your_printer_name);
+		// printer_start_doc($p,"Testpage");
+		// printer_start_page($p);
 	
-		$pen = printer_create_pen(PRINTER_PEN_DOT, 1, "000000");
-		$font = printer_create_font("Draft Condensed",20,7, PRINTER_FW_ULTRALIGHT, false, false, false, 0);
+		// $pen = printer_create_pen(PRINTER_PEN_DOT, 1, "000000");
+		// $font = printer_create_font("Draft Condensed",20,7, PRINTER_FW_ULTRALIGHT, false, false, false, 0);
 	
-		printer_select_pen($p, $pen);
-		printer_select_font($p, $font);					 
+		// printer_select_pen($p, $pen);
+		// printer_select_font($p, $font);					 
 		 
-		printer_draw_text($p,"Nomor Antrian Pelayanan",102,0);
-		printer_draw_text($p,"Kecamatan Simpang Katis",100,20);
-		printer_draw_text($p,"Date :".date('d/m/Y'),0,60);
-		printer_draw_text($p,"Time :".date('h:i A'),260,60);
-		printer_draw_line($p, 0,90, 500, 90);
+		// printer_draw_text($p,"Nomor Antrian Pelayanan",102,0);
+		// printer_draw_text($p,"Kecamatan Simpang Katis",100,20);
+		// printer_draw_text($p,"Date :".date('d/m/Y'),0,60);
+		// printer_draw_text($p,"Time :".date('h:i A'),260,60);
+		// printer_draw_line($p, 0,90, 500, 90);
 
-		printer_delete_font($font);
+		// printer_delete_font($font);
 
-		$font = printer_create_font("Verdana", 160, 72, 600, false, false, false, 0);   
-		printer_select_font($p, $font);	    
-		printer_draw_text($p,$this->mantrian->get_print($id)->nomor,93,104);
-		printer_delete_font($font);
+		// $font = printer_create_font("Verdana", 160, 72, 600, false, false, false, 0);   
+		// printer_select_font($p, $font);	    
+		// printer_draw_text($p,$this->mantrian->get_print($id)->nomor,93,104);
+		// printer_delete_font($font);
 
-		$font = printer_create_font("Draft Condensed",20,7, PRINTER_FW_ULTRALIGHT, false, false, false, 0);     
-		printer_select_font($p, $font);	     
-		printer_draw_text($p,"Mohon Menunggu Panggilan, pastikan Anda dilayani",3,260);
-		printer_draw_text($p,"dengan baik oleh petugas kami. Terima Kasih !",15,280);
+		// $font = printer_create_font("Draft Condensed",20,7, PRINTER_FW_ULTRALIGHT, false, false, false, 0);     
+		// printer_select_font($p, $font);	     
+		// printer_draw_text($p,"Mohon Menunggu Panggilan, pastikan Anda dilayani",3,260);
+		// printer_draw_text($p,"dengan baik oleh petugas kami. Terima Kasih !",15,280);
 
 	 
-		printer_delete_font($font);
-		printer_delete_pen($pen);
-		printer_end_page($p);
-		printer_end_doc($p);
-		printer_close($p);
+		// printer_delete_font($font);
+		// printer_delete_pen($pen);
+		// printer_end_page($p);
+		// printer_end_doc($p);
+		// printer_close($p);
 
 
-		redirect(base_url('queue'));
+		//redirect(base_url('queue'));
 	}
 	
 }

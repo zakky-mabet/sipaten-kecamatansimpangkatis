@@ -43,7 +43,7 @@
 	  		<div class="col-xs-4 col-xs-offset-3">
 
 		       <a href="<?php echo site_url('queue/get'); ?>">
-		        <button class="clicky btn-block first animated bounceIn" onclick="playSound();">
+		        <button class="clicky btn-block first animated bounceIn btn-print" onclick="playSound();">
 					<i class="fa fa-users" style="font-size: 5em; color:#4D9C56 "></i>
 					<p style="font-size: 1.6em; font-family:'Viga',sans-serif; font-weight: 600; color:white ">Ambil Antrian</p>
 		        </button>

@@ -79,7 +79,6 @@
                 @page  { 
                     width: 80mm;
                     margin: 0mm;
-
                 }
             }
 
@@ -91,7 +90,7 @@
 
         </style>
     </head>
-    <body onload="">
+    <body onload="window.print()">
         <div class="content">
             <div class="title">
                 Nomor Antrian Pelayanan <br> Kecamatan Simpang Katis        

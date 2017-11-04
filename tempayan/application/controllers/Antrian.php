@@ -29,6 +29,8 @@ class Antrian extends Sipaten {
 		$this->page = $this->input->get('page');
 
 		$this->query = $this->input->get('query');
+
+		$this->load->js(base_url('public/app/kiosk/responsivevoice.js'));
 		
 	}
 
