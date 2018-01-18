@@ -26,7 +26,6 @@ class Surat extends CI_Controller
 		foreach ($this->surat_keluar->data($this->per_page, $this->page) as $key => $value) 
 		{
 			$date = new DateTime($value->tanggal);
-
 			$surat[] = array(
 				'ID' => $value->ID,
 				'judul_surat' => $value->judul_surat,
